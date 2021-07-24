@@ -1,0 +1,265 @@
+/* style cho filter box */
+
+#laptop-box {
+    width: 100%;
+    display: flex;
+}
+
+#products-filter {
+    width: 262px;
+    height: fit-content;
+    margin-right: 20px;
+    padding: 12px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.hang-san-xuat {
+    padding-bottom: 8px;
+    border-bottom: solid #c4c4c4 1px;
+}
+
+.hang-san-xuat p {
+    font-weight: 600;
+    margin-bottom: 4px !important;
+}
+
+#products-filter label {
+    margin-left: 4px;
+    font-size: 14px;
+}
+
+#hang-san-xuat-checkbox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.other-filter {
+    padding: 12px 0px 8px 0px;
+    border-bottom: solid #c4c4c4 1px;
+}
+
+.other-filter p {
+    font-weight: 600;
+    margin-bottom: 4px !important;
+}
+
+/* kết thúc style cho filter box */
+
+/* style cho laptop-content */
+
+#laptop-content {
+    width: 77%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#card-header {
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#latop-theo-nhu-cau-box {
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#latop-theo-nhu-cau-header {
+    padding: 10px;
+}
+
+#latop-theo-nhu-cau-items {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#latop-theo-nhu-cau-item {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+    border-radius: 5px;
+}
+
+#latop-theo-nhu-cau-item img {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+#latop-theo-nhu-cau-item p {
+    font-size: 15px;
+    color: #222;
+}
+
+#latop-theo-nhu-cau-item:hover {
+    box-shadow: 0px 2px 5px rgba(54, 54, 54, 0.25);
+}
+#products-box{
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+#products-box-header{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: #c4c4c4 solid 1px;
+    font-size: 14px;
+}
+.sort-item{
+    background-color: white;
+    padding: 8px;
+    border: #9e9e9e solid 1px;
+    border-radius: 5px;
+    margin: 0px 6px;
+}
+.active{
+    background-color: #FF4B04;
+    color: white;
+    border: #FF4B04;
+}
+/* style cho products */
+.products {
+    margin-top: 1px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 12px;
+    grid-column-gap: 12px;
+    background-color:white;
+}
+
+.products>a {
+    padding: 4px;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.product {
+    width: 100%;
+    padding: 8px;
+    background-color: white;
+    transition: transform 0.2s ease-in-out;
+}
+
+.product:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.product-card {
+    width: 100%;
+    height: 134px;
+    margin-top: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-card-name {
+    width: 100%;
+    height: 58px;
+    font-size: 13px;
+    color: #222;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+.product-card-price {
+    width: 100%;
+    color: #004de5;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.product-card-old-price {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.old-price {
+    width: fit-content;
+    font-size: 12px;
+    text-decoration: line-through;
+    color: #797979;
+    font-weight: 500;
+}
+
+.discount-percent {
+    color: #40bf55;
+    font-size: 12px;
+    margin-left: 8px !important;
+    font-weight: 500;
+}
+
+.product-card-gift {
+    width: 100%;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-card-gift span {
+    color: #222;
+    font-size: 11px;
+}
+
+.product-card-gift-img {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.product-card-gift-img img {
+    width: 24px;
+    height: 24px;
+    margin-right: 4px;
+}
+
+#paginate{
+    display: flex;
+    align-items: center;
+}
+#paginate a{
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    border-radius: 5px;
+    border: #c4c4c4 solid 1px;
+    background-color: white;
+    color: rgba(38, 121, 255, 0.9);
+    margin: 0px 5px;
+}
+#paginate .fas{
+    color: #c4c4c4;
+}
+.paginate-active{
+    background-color: rgba(38, 121, 255, 0.9) !important;
+    color: white !important;
+    border: none !important;
+}
+/* Kết thúc style cho laptop-content */
