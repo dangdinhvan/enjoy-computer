@@ -1317,7 +1317,7 @@
                     <div id="hang-san-xuat-checkbox">
                         <div style="width: 45%;">
                             <div style="display: flex; align-items: center; margin-bottom: 4px;">
-                                <input type="checkbox" id="all">
+                                <input type="checkbox" class="all">
                                 <label for="all">Tất cả</label>
                             </div>
                             <div style="display: flex; align-items: center; margin-bottom: 4px;">
@@ -1325,12 +1325,12 @@
                                 <label for="asus">Asus</label>
                             </div>
                             <div style="display: flex; align-items: center; margin-bottom: 4px;">
-                                <input type="checkbox" id="asus">
-                                <label for="asus">Asus</label>
+                                <input type="checkbox" id="msi">
+                                <label for="msi">MSI</label>
                             </div>
                             <div style="display: flex; align-items: center; margin-bottom: 4px;">
-                                <input type="checkbox" id="asus">
-                                <label for="asus">Asus</label>
+                                <input type="checkbox" id="gigabyte">
+                                <label for="gigabyte">Gigabyte</label>
                             </div>
                             <div style="display: flex; align-items: center; margin-bottom: 4px;">
                                 <input type="checkbox" id="asus">
@@ -1368,7 +1368,7 @@
                 <div class="other-filter">
                     <p>Mức giá</p>
                     <div style="display: flex; align-items: center; margin-bottom: 4px;">
-                        <input type="checkbox" id="all">
+                        <input type="checkbox" class="all">
                         <label for="all">Tất cả</label>
                     </div>
                     <div style="display: flex; align-items: center; margin-bottom: 4px;">
@@ -1396,7 +1396,7 @@
                 <div class="other-filter">
                     <p>Mức giá</p>
                     <div style="display: flex; align-items: center; margin-bottom: 4px;">
-                        <input type="checkbox" id="all">
+                        <input type="checkbox" class="all">
                         <label for="all">Tất cả</label>
                     </div>
                     <div style="display: flex; align-items: center; margin-bottom: 4px;">
@@ -1424,7 +1424,7 @@
                 <div class="other-filter">
                     <p>Mức giá</p>
                     <div style="display: flex; align-items: center; margin-bottom: 4px;">
-                        <input type="checkbox" id="all">
+                        <input type="checkbox" class="all">
                         <label for="all">Tất cả</label>
                     </div>
                     <div style="display: flex; align-items: center; margin-bottom: 4px;">
@@ -1452,7 +1452,7 @@
                 <div class="other-filter">
                     <p>Mức giá</p>
                     <div style="display: flex; align-items: center; margin-bottom: 4px;">
-                        <input type="checkbox" id="all">
+                        <input type="checkbox" class="all">
                         <label for="all">Tất cả</label>
                     </div>
                     <div style="display: flex; align-items: center; margin-bottom: 4px;">
@@ -1480,7 +1480,7 @@
                 <div class="other-filter">
                     <p>Mức giá</p>
                     <div style="display: flex; align-items: center; margin-bottom: 4px;">
-                        <input type="checkbox" id="all">
+                        <input type="checkbox" class="all">
                         <label for="all">Tất cả</label>
                     </div>
                     <div style="display: flex; align-items: center; margin-bottom: 4px;">
@@ -1508,7 +1508,7 @@
                 <div class="other-filter">
                     <p>Mức giá</p>
                     <div style="display: flex; align-items: center; margin-bottom: 4px;">
-                        <input type="checkbox" id="all">
+                        <input type="checkbox" class="all">
                         <label for="all">Tất cả</label>
                     </div>
                     <div style="display: flex; align-items: center; margin-bottom: 4px;">
@@ -1536,7 +1536,7 @@
                 <div class="other-filter" style="border: none;">
                     <p>Mức giá</p>
                     <div style="display: flex; align-items: center; margin-bottom: 4px;">
-                        <input type="checkbox" id="all">
+                        <input type="checkbox" class="all">
                         <label for="all">Tất cả</label>
                     </div>
                     <div style="display: flex; align-items: center; margin-bottom: 4px;">
@@ -1597,16 +1597,16 @@
                 <div id="products-box">
                     <div id="products-box-header">
                         <span style="margin-right: 6px;">Sắp xếp theo</span>
-                        <div class="sort-item active">Bán chạy nhất</div>
-                        <div class="sort-item">Hàng mới về</div>
-                        <div class="sort-item">Giá tăng dần</div>
-                        <div class="sort-item">Giá giảm dần</div>
-                        <div class="sort-item">Khuyến mãi tốt nhất</div>
-                        <div class="sort-item">Trả góp 0%</div>
+                        <button class="sort-item active" id="sort-item-1" onclick="activeSortBtn('1')">Bán chạy nhất</button>
+                        <button class="sort-item" id="sort-item-2" onclick="activeSortBtn('2')">Hàng mới về</button>
+                        <button class="sort-item" id="sort-item-3" onclick="activeSortBtn('3')">Giá tăng dần</button>
+                        <button class="sort-item" id="sort-item-4" onclick="activeSortBtn('4')">Giá giảm dần</button>
+                        <button class="sort-item" id="sort-item-5" onclick="activeSortBtn('5')">Khuyến mãi tốt nhất</button>
+                        <button class="sort-item" id="sort-item-6" onclick="activeSortBtn('6')">Trả góp 0%</button>
                     </div>
                     <!-- products -->
                     <div class="products">
-                        <a href="#">
+                        <a href="./Laptop MSI GS65 Stealth 9SD-1409VN.html">
                             <div class="product">
                                 <img src="img/lap-top-1.webp" alt="hot-sell-1">
                                 <div class="product-card">
@@ -1624,7 +1624,7 @@
                             </div>
                         </a>
 
-                        <a href="#">
+                        <a href="./Laptop MSI GS65 Stealth 9SD-1409VN.html">
                             <div class="product">
                                 <img src="img/hot-sell-2.webp" alt="hot-sell-2">
                                 <div class="product-card">
@@ -1647,7 +1647,7 @@
                             </div>
                         </a>
 
-                        <a href="#">
+                        <a href="./Laptop MSI GS65 Stealth 9SD-1409VN.html">
                             <div class="product">
                                 <img src="img/hot-sell-3.webp" alt="hot-sell-3">
                                 <div class="product-card">
@@ -1670,7 +1670,7 @@
                             </div>
                         </a>
 
-                        <a href="#">
+                        <a href="./Laptop MSI GS65 Stealth 9SD-1409VN.html">
                             <div class="product">
                                 <img src="img/hot-sell-4.webp" alt="hot-sell-4">
                                 <div class="product-card">
@@ -1696,7 +1696,7 @@
                     <hr style="background-color: #c4c4c4; margin: 0px;">
 
                     <div class="products">
-                        <a href="#">
+                        <a href="./Laptop MSI GS65 Stealth 9SD-1409VN.html">
                             <div class="product">
                                 <img src="img/lap-top-1.webp" alt="hot-sell-1">
                                 <div class="product-card">
@@ -2265,7 +2265,6 @@
             <a id="messenger-fixed" href="https://m.me/dang.dinhvan.5/"><img src="img/messenger-fixed.png"
                     alt="messenger"></a>
         </div>
-    </div>
     </div>
 
     <footer>

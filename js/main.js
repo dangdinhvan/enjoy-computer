@@ -10,3 +10,7 @@ $(window).on('click', function (event) {
         $('#menu-mobile').css('animation', 'none');
     }
 });
+
+$('#logo').on('click',function(){
+    window.location.href='/';
+});

@@ -11,6 +11,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/Laptop MSI GS65 Stealth 9SD-1409VN.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Laptop MSI GS65 Stealth 9SD-1409VN</title>
 </head>
@@ -1313,16 +1314,17 @@
                     1.9 kg)</span></a>
         </div>
         <div id="product-card">
+            <!-- product brief -->
             <div id="product-brief">
                 <div id="product-brief-left">
                     <img id="img-active" src="img/laptop-img-1.webp" alt="laptop-msi">
                     <div id="sub-imgs">
-                        <div class="sub-img active"><img src="img/laptop-img-1.webp" alt="laptop-img-1"></div>
-                        <div class="sub-img"><img src="img/laptop-img-2.webp" alt="laptop-img-2"></div>
-                        <div class="sub-img"><img src="img/laptop-img-3.webp" alt="laptop-img-3"></div>
-                        <div class="sub-img"><img src="img/laptop-img-4.webp" alt="laptop-img-4"></div>
-                        <div class="sub-img"><img src="img/laptop-img-5.webp" alt="laptop-img-5"></div>
-                        <div class="sub-img"><img src="img/laptop-img-6.webp" alt="laptop-img-6"></div>
+                        <button class="sub-img active" id="sub-img-1" onclick="activeImg('1')"><img src="img/laptop-img-1.webp" alt="laptop-img-1"></button>
+                        <button class="sub-img" id="sub-img-2" onclick="activeImg('2')"><img src="img/laptop-img-2.webp" alt="laptop-img-2"></button>
+                        <button class="sub-img" id="sub-img-3" onclick="activeImg('3')"><img src="img/laptop-img-3.webp" alt="laptop-img-3"></button>
+                        <button class="sub-img" id="sub-img-4" onclick="activeImg('4')"><img src="img/laptop-img-4.webp" alt="laptop-img-4"></button>
+                        <button class="sub-img" id="sub-img-5" onclick="activeImg('5')"><img src="img/laptop-img-5.webp" alt="laptop-img-5"></button>
+                        <button class="sub-img" id="sub-img-6" onclick="activeImg('6')"><img src="img/laptop-img-6.webp" alt="laptop-img-6"></button>
                     </div>
                     <hr style="border-top: #c4c4c4 dashed 1px; margin: 0px;">
                     <div id="payment-methods">
@@ -1381,26 +1383,447 @@
 
                         </div>
                     </div>
-                    <button>mua ngay</button>
-                    <div>
-                        <button>mua trả góp</button>
-                        <button>thêm vào giỏ hàng</button>
+                    <button id="buy-now-btn">mua ngay</button>
+                    <div id="installment-add-to-card-box">
+                        <button class="sm-btn installment-btn">mua trả góp</button>
+                        <button class="sm-btn add-to-cart-btn">thêm vào giỏ hàng</button>
                     </div>
                 </div>
             </div>
-            <div id="company-policy">
+            <div id="company-policy-services">
+                <div id="company-policy">
+                    <p>Chính sách bán hàng</p>
+                    <div class="company-policy-services-item">
+                        <div style="margin-right: 10px;">
+                            <img src="img/shipping-car.png" alt="shipping-car">
+                        </div>
+                        <div>Miễn phí giao hàng cho đơn hàng từ 800.000đ trở lên</div>
+                    </div>
+                    <div class="company-policy-services-item">
+                        <div style="margin-right: 10px;">
+                            <img src="img/sheild.png" alt="sheild">
+                        </div>
+                        <div>Cam kết bán hàng chính hãng 100%</div>
+                    </div>
+                    <div class="company-policy-services-item">
+                        <div style="margin-right: 10px;">
+                            <img src="img/doi-tra.png" alt="doi-tra">
+                        </div>
+                        <div>Đổi trả trong vòng 15 ngày</div>
+                    </div>
+                </div>
+                <div id="services">
+                    <p>Các dịch vụ khác</p>
+                    <div class="company-policy-services-item">
+                        <div style="margin-right: 10px;">
+                            <img src="img/repair.png" alt="repair">
+                        </div>
+                        <div>Sửa chữa đồng giá 150.000đ</div>
+                    </div>
+                    <div class="company-policy-services-item">
+                        <div style="margin-right: 10px;">
+                            <img src="img/ve-sinh-laptop.png" alt="ve-sinh-laptop">
+                        </div>
+                        <div>Vệ sinh máy tính, laptop</div>
+                    </div>
+                    <div class="company-policy-services-item">
+                        <div style="margin-right: 10px;">
+                            <img src="img/bike.png" alt="bike">
+                        </div>
+                        <div>Bảo hành tại nhà</div>
+                    </div>
+                </div>
 
             </div>
         </div>
+        <!-- product info -->
         <div id="product-information">
             <div id="product-description">
+                <div class="product-information-title">
+                    <div style="font-size: 19px; margin-right: 6px;">|</div>
+                    <div style="height: 21px; font-weight: 600;">Mô tả sản phẩm</div>
+                </div>
+                <div id="product-description-content">
+                    <img src="img/msi-mota-1.jpg" alt="mota-1">
+                    <h4>Mỏng hơn và nhẹ hơn</h4>
+                    <p>
+                        Laptop gaming MSI GS65 Stealth 9SD-1409VN đã định nghĩa lại hoàn toàn cách bạn thường mặc định
+                        về một chiếc laptop gaming 15.6-inch. Một thiết kế nhỏ gọn nhờ viền màn hình siêu mỏng cùng với
+                        tông màu vàng và đen cao cấp. Lịch lãm, tinh tế, mạnh mẽ - Tất cả đã được chế tác thành một.
+                    </p>
+                    <img src="img/msi-mota-2.jpg" alt="mota-2">
+                    <h4>Chip Intel hiệu năng cao mới nhất</h4>
+                    <p>Laptop MSI GS65 Stealth 9SD được trang bị chip xử lý Intel đa nhân thế hệ mới nhất cho hiệu năng
+                        tăng cao lên đến 40% thế hệ trước nhờ tốc độ xử lý ở tần số cao.</p>
+                    <img src="img/msi-mota-3.jpg" alt="mota-3">
+                    <h4>Card đồ họa NVIDIA tối tân</h4>
+                    <p>Laptop MSI GS65 Stealth 9SD với trang bị card đồ họa NVIDIA GeForce tối tân giúp cải thiện hiệu
+                        năng xử lý đồ họa lên đến 40%, tăng hiệu quả số lượng khung hình/giây cho các tựa game đang hot
+                        nhất hiện nay.
+                    </p>
+                    <img src="img/msi-mota-4.jpg" alt="mota-4">
+                    <h4>Màn hình sắc nét siêu mỏng</h4>
+                    <p>Với màn hình kích thước 15.6 inch với độ phân giải Full HD, MSI GS65 Stealth 9SD đưa người dùng
+                        vào thế giới game chuyển động theo từng chi tiết của hình ảnh nhờ tần số quét lên đến 144Hz. Tấm
+                        nền IPS sáng hơn, góc nhìn rộng hơn với 170o khiến người chơi có thể thoải mái thay đổi vị trí
+                        ngồi nhưng vẫn có thể nhìn rõ nét từng chi tiết.
+                    </p>
+                    <img src="img/msi-mota-5.jpg" alt="mota-5">
+                    <h4>Cooler Boost Trinity - Tản nhiệt hiệu quả</h4>
+                    <p>Công nghệ Cooler Boost Trinity sử dụng 3 quạt Whirlwind Blade với độ mỏng của quạt được ví như
+                        những lưỡi dao, có tới 6 ống dẫn nhiệt và 4 luồng khí được thoát ra liên tục qua các ống xả
+                        khiến nhiệt độ luôn được giữ ở mức ổn định giúp giữ được độ bền bỉ cũng như công suất làm việc
+                        cho máy. Thiết kế đã giúp MSI GS65 Stealth 9SD có được mức công suất tốt hơn tới 20% mang lại
+                        nhiệt độ được duy trì “bền vững”.
+                    </p>
+                    <img src="img/msi-mota-6.jpg" alt="mota-6">
+                    <h4>Nahimic 3 - quản lý âm thanh</h4>
+                    <p>Phần mềm NAHIMIC 3 trên MSI GS65 Stealth 9SD mang lại cho người chơi game chế độ tuyệt vời nhất
+                        để đắm chìm, âm thanh vòm 3D “mang khoảng không gian từ trong game ra ngoài đời thực” nhằm đưa
+                        người chơi đến với đỉnh cao của âm thanh.
+                    </p>
+                    <img src="img/msi-mota-7.jpg" alt="mota-7">
+                    <h4>Pin lên đến 8h sử dụng</h4>
+                    <p>Thời lượng pin trên Laptop Gaming MSI GS65 Stealth 9SD đến 8 tiếng, sẵn sàng đáp ứng cho mọi nhu
+                        cầu làm việc và giải trí của bạn.
+                    </p>
+                    <img src="img/msi-mota-8.jpg" alt="mota-8">
+                </div>
 
+                <div style="width:100%; display:flex; justify-content: center;"><button id="view-more-btn"
+                        onclick="viewMore()"><span style="margin-right: 4px;">Xem thêm</span><i
+                            class="fas fa-angle-down"></i></button></div>
             </div>
             <div id="specifications">
-
+                <div class="product-information-title">
+                    <div style="font-size: 19px; margin-right: 6px;">|</div>
+                    <div style="height: 21px; font-weight: 600;">Thông số kỹ thuật</div>
+                </div>
+                <div id="specifications-box">
+                    <div style="font-size: 15px; color:rgba(34,34,34,0.6); font-weight:600;">Thông tin chung</div>
+                    <div class="product-info-key-value gray">
+                        <div class="key">Thương hiệu</div>
+                        <div class="value">MSI</div>
+                    </div>
+                    <div class="product-info-key-value">
+                        <div class="key">Series laptop</div>
+                        <div class="value">GS Series</div>
+                    </div>
+                    <div class="product-info-key-value gray">
+                        <div class="key">Part-number</div>
+                        <div class="value">4719072674250</div>
+                    </div>
+                    <div class="product-info-key-value">
+                        <div class="key">Thế hệ CPU</div>
+                        <div class="value">Core i5 , Intel Core thế hệ thứ 9</div>
+                    </div>
+                    <div style="font-size: 15px; color:rgba(34,34,34,0.6); font-weight:600;">Thông tin chi tiết</div>
+                    <div class="product-info-key-value gray">
+                        <div class="key">CPU</div>
+                        <div class="value">Intel Core i5-1135G7 ( 4.2 GHz / 8MB / 4 nhân, 8 luồng )</div>
+                    </div>
+                    <div class="product-info-key-value">
+                        <div class="key">Chip đồ họa</div>
+                        <div class="value">
+                            NVIDIA GeForce GTX 1660Ti 6GB GDDR6 / Intel UHD Graphics 630</div>
+                    </div>
+                    <div class="product-info-key-value gray">
+                        <div class="key">RAM</div>
+                        <div class="value">1 x 8GB DDR4 3200MHz ( 1 Khe cắm / Hỗ trợ tối đa 32GB )</div>
+                    </div>
+                    <div class="product-info-key-value">
+                        <div class="key">Màn hình</div>
+                        <div class="value">
+                            15.6" ( 1920 x 1080 ) Full HD IPS 144Hz , không cảm ứng , HD webcam</div>
+                    </div>
+                    <div class="product-info-key-value gray">
+                        <div class="key">Lưu trữ</div>
+                        <div class="value">
+                            512GB SSD M.2 NVMe</div>
+                    </div>
+                    <div class="product-info-key-value">
+                        <div class="key">Số cổng lưu trữ tối đa</div>
+                        <div class="value">1 x M.2 NVMe, 1 x M.2 SATA/NVMe</div>
+                    </div>
+                    <div class="product-info-key-value gray">
+                        <div class="key">Cổng xuất hình</div>
+                        <div class="value">
+                            1 x HDMI , 1 x DisplayPort</div>
+                    </div>
+                    <div class="product-info-key-value">
+                        <div class="key">Cổng kết nối</div>
+                        <div class="value">1 x USB Type-C / DisplayPort / Thunderbolt 3 , 3 x USB 3.2 , LAN 1 Gb/s</div>
+                    </div>
+                    <div class="product-info-key-value gray">
+                        <div class="key">Kết nối không dây</div>
+                        <div class="value">
+                            WiFi 802.11ac , Bluetooth 5.0</div>
+                    </div>
+                    <div class="product-info-key-value">
+                        <div class="key">Bàn phím</div>
+                        <div class="value">
+                            thường , không phím số , led RGB</div>
+                    </div>
+                    <div class="product-info-key-value gray">
+                        <div class="key">Hệ điều hành</div>
+                        <div class="value">
+                            Windows 10 Home 64-bit</div>
+                    </div>
+                    <div class="product-info-key-value">
+                        <div class="key">Kích thước</div>
+                        <div class="value">
+                            35.77 x 24.77 x 1.79 cm</div>
+                    </div>
+                    <div class="product-info-key-value gray">
+                        <div class="key">Pin</div>
+                        <div class="value">
+                            4 cell 82 Wh</div>
+                    </div>
+                    <div class="product-info-key-value">
+                        <div class="key">Khối lượng</div>
+                        <div class="value">
+                            1.9 kg</div>
+                    </div>
+                    <div style="font-size: 15px; color:rgba(34,34,34,0.6); font-weight:600;">Thông tin khác</div>
+                    <div class="product-info-key-value gray">
+                        <div class="key">Bảo mật</div>
+                        <div class="value">
+                            Vân tay</div>
+                    </div>
+                    <div class="product-info-key-value">
+                        <div class="key">Đèn led trên máy</div>
+                        <div class="value">
+                            Led RGB</div>
+                    </div>
+                </div>
             </div>
         </div>
 
+        <div id="same-product">
+            <div class="product-information-title">
+                <div style="font-size: 19px; margin-right: 6px;">|</div>
+                <div style="height: 21px; font-weight: 600;">Sản phẩm liên quan</div>
+            </div>
+            <div class="products">
+                <a href="./Laptop MSI GS65 Stealth 9SD-1409VN.html">
+                    <div class="product">
+                        <img src="img/lap-top-1.webp" alt="hot-sell-1">
+                        <div class="product-card">
+                            <div class="product-card-name">Laptop MICROSOFT Surface Pro 7 QWU-00001 ( 12.3"
+                                Intel Core i5-1035G4/8GB/128GB SSD/Free DOS/0.8kg)</div>
+                            <p class="product-card-price">3.990.000 đ</p>
+                            <div class="product-card-old-price">
+                                <p class="old-price">4.209.000 đ</p>
+                                <p class="discount-percent">-5.2%</p>
+                            </div>
+                            <div class="product-card-gift">
+
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./Laptop MSI GS65 Stealth 9SD-1409VN.html">
+                    <div class="product">
+                        <img src="img/hot-sell-2.webp" alt="hot-sell-2">
+                        <div class="product-card">
+                            <div class="product-card-name">Laptop ASUS Vivobook S533EQ- BQ011T ( 15.6" Full HD/
+                                Intel Core i5-1135G7/
+                                8GB/ 512GB SSD/ NVIDIA GeForce MX350/ Windows 10 Home SL 64-bit/1.7kg)</div>
+                            <p class="product-card-price">21.490.000 đ</p>
+                            <div class="product-card-old-price">
+                                <p class="old-price">21.790.000 đ</p>
+                                <p class="discount-percent">-1.3%</p>
+                            </div>
+                            <div class="product-card-gift">
+                                <span>Quà tặng</span>
+                                <div class="product-card-gift-img">
+                                    <img src="img/bag-laptop-1.jpg" alt="">
+                                    <span>x1 túi đựng laptop 15.6'</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./Laptop MSI GS65 Stealth 9SD-1409VN.html">
+                    <div class="product">
+                        <img src="img/hot-sell-3.webp" alt="hot-sell-3">
+                        <div class="product-card">
+                            <div class="product-card-name">Laptop ASUS Vivobook S533EQ- BQ011T ( 15.6" Full HD/
+                                Intel Core i5-1135G7/
+                                8GB/ 512GB SSD/ NVIDIA GeForce MX350/ Windows 10 Home SL 64-bit/1.7kg)</div>
+                            <p class="product-card-price">3.990.000 đ</p>
+                            <div class="product-card-old-price">
+                                <p class="old-price">4.209.000 đ</p>
+                                <p class="discount-percent">-5.2%</p>
+                            </div>
+                            <div class="product-card-gift">
+                                <span>Quà tặng</span>
+                                <div class="product-card-gift-img">
+                                    <img src="img/bag-laptop-1.jpg" alt="">
+                                    <span>x1 túi đựng laptop 15.6'</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./Laptop MSI GS65 Stealth 9SD-1409VN.html">
+                    <div class="product">
+                        <img src="img/hot-sell-4.webp" alt="hot-sell-4">
+                        <div class="product-card">
+                            <div class="product-card-name">Laptop ASUS Vivobook S533EQ- BQ011T ( 15.6" Full HD/
+                                Intel Core i5-1135G7/
+                                8GB/ 512GB SSD/ NVIDIA GeForce MX350/ Windows 10 Home SL 64-bit/1.7kg)</div>
+                            <p class="product-card-price">3.990.000 đ</p>
+                            <div class="product-card-old-price">
+                                <p class="old-price">4.209.000 đ</p>
+                                <p class="discount-percent">-5.2%</p>
+                            </div>
+                            <div class="product-card-gift">
+                                <span>Quà tặng</span>
+                                <div class="product-card-gift-img">
+                                    <img src="img/bag-laptop-1.jpg" alt="">
+                                    <span>x1 túi đựng laptop 15.6'</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./Laptop MSI GS65 Stealth 9SD-1409VN.html">
+                    <div class="product">
+                        <img src="img/lap-top-1.webp" alt="hot-sell-1">
+                        <div class="product-card">
+                            <div class="product-card-name">Laptop MICROSOFT Surface Pro 7 QWU-00001 ( 12.3"
+                                Intel Core i5-1035G4/8GB/128GB SSD/Free DOS/0.8kg)</div>
+                            <p class="product-card-price">3.990.000 đ</p>
+                            <div class="product-card-old-price">
+                                <p class="old-price">4.209.000 đ</p>
+                                <p class="discount-percent">-5.2%</p>
+                            </div>
+                            <div class="product-card-gift">
+                                <span>Quà tặng</span>
+                                <div class="product-card-gift-img">
+                                    <img src="img/bag-laptop-1.jpg" alt="">
+                                    <span>x1 túi đựng laptop 15.6'</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./Laptop MSI GS65 Stealth 9SD-1409VN.html">
+                    <div class="product">
+                        <img src="img/lap-top-1.webp" alt="hot-sell-1">
+                        <div class="product-card">
+                            <div class="product-card-name">Laptop MICROSOFT Surface Pro 7 QWU-00001 ( 12.3"
+                                Intel Core i5-1035G4/8GB/128GB SSD/Free DOS/0.8kg)</div>
+                            <p class="product-card-price">3.990.000 đ</p>
+                            <div class="product-card-old-price">
+                                <p class="old-price">4.209.000 đ</p>
+                                <p class="discount-percent">-5.2%</p>
+                            </div>
+                            <div class="product-card-gift">
+
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./Laptop MSI GS65 Stealth 9SD-1409VN.html">
+                    <div class="product">
+                        <img src="img/hot-sell-2.webp" alt="hot-sell-2">
+                        <div class="product-card">
+                            <div class="product-card-name">Laptop ASUS Vivobook S533EQ- BQ011T ( 15.6" Full HD/
+                                Intel Core i5-1135G7/
+                                8GB/ 512GB SSD/ NVIDIA GeForce MX350/ Windows 10 Home SL 64-bit/1.7kg)</div>
+                            <p class="product-card-price">21.490.000 đ</p>
+                            <div class="product-card-old-price">
+                                <p class="old-price">21.790.000 đ</p>
+                                <p class="discount-percent">-1.3%</p>
+                            </div>
+                            <div class="product-card-gift">
+                                <span>Quà tặng</span>
+                                <div class="product-card-gift-img">
+                                    <img src="img/bag-laptop-1.jpg" alt="">
+                                    <span>x1 túi đựng laptop 15.6'</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./Laptop MSI GS65 Stealth 9SD-1409VN.html">
+                    <div class="product">
+                        <img src="img/hot-sell-3.webp" alt="hot-sell-3">
+                        <div class="product-card">
+                            <div class="product-card-name">Laptop ASUS Vivobook S533EQ- BQ011T ( 15.6" Full HD/
+                                Intel Core i5-1135G7/
+                                8GB/ 512GB SSD/ NVIDIA GeForce MX350/ Windows 10 Home SL 64-bit/1.7kg)</div>
+                            <p class="product-card-price">3.990.000 đ</p>
+                            <div class="product-card-old-price">
+                                <p class="old-price">4.209.000 đ</p>
+                                <p class="discount-percent">-5.2%</p>
+                            </div>
+                            <div class="product-card-gift">
+                                <span>Quà tặng</span>
+                                <div class="product-card-gift-img">
+                                    <img src="img/bag-laptop-1.jpg" alt="">
+                                    <span>x1 túi đựng laptop 15.6'</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./Laptop MSI GS65 Stealth 9SD-1409VN.html">
+                    <div class="product">
+                        <img src="img/hot-sell-4.webp" alt="hot-sell-4">
+                        <div class="product-card">
+                            <div class="product-card-name">Laptop ASUS Vivobook S533EQ- BQ011T ( 15.6" Full HD/
+                                Intel Core i5-1135G7/
+                                8GB/ 512GB SSD/ NVIDIA GeForce MX350/ Windows 10 Home SL 64-bit/1.7kg)</div>
+                            <p class="product-card-price">3.990.000 đ</p>
+                            <div class="product-card-old-price">
+                                <p class="old-price">4.209.000 đ</p>
+                                <p class="discount-percent">-5.2%</p>
+                            </div>
+                            <div class="product-card-gift">
+                                <span>Quà tặng</span>
+                                <div class="product-card-gift-img">
+                                    <img src="img/bag-laptop-1.jpg" alt="">
+                                    <span>x1 túi đựng laptop 15.6'</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./Laptop MSI GS65 Stealth 9SD-1409VN.html">
+                    <div class="product">
+                        <img src="img/lap-top-1.webp" alt="hot-sell-1">
+                        <div class="product-card">
+                            <div class="product-card-name">Laptop MICROSOFT Surface Pro 7 QWU-00001 ( 12.3"
+                                Intel Core i5-1035G4/8GB/128GB SSD/Free DOS/0.8kg)</div>
+                            <p class="product-card-price">3.990.000 đ</p>
+                            <div class="product-card-old-price">
+                                <p class="old-price">4.209.000 đ</p>
+                                <p class="discount-percent">-5.2%</p>
+                            </div>
+                            <div class="product-card-gift">
+                                <span>Quà tặng</span>
+                                <div class="product-card-gift-img">
+                                    <img src="img/bag-laptop-1.jpg" alt="">
+                                    <span>x1 túi đựng laptop 15.6'</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
     </div>
 
     <!-- contact fixed -->
@@ -1409,16 +1832,17 @@
             <div id="phone-fixed"><img src="img/phone-fixed.png" alt="phone"></div>
             <div id="location-fixed"><img src="img/location-fixed.png" alt="location"></div>
             <a id="facebook-fixed" href="https://www.facebook.com/dang.dinhvan.5/"><img src="img/facebook-fixed.png"
-                    alt="facbook"></a>
+                    alt="facbook">
+            </a>
         </div>
         <div id="up-messenger">
             <a id="up-to-header" href="#">
                 <div><i class="fas fa-angle-up"></i></div>
             </a>
             <a id="messenger-fixed" href="https://m.me/dang.dinhvan.5/"><img src="img/messenger-fixed.png"
-                    alt="messenger"></a>
+                    alt="messenger">
+            </a>
         </div>
-    </div>
     </div>
 
     <footer>
@@ -1483,6 +1907,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/Laptop MSI GS65 Stealth 9SD-1409VN.js"></script>
     <script src="./js/main.js"></script>
 </body>

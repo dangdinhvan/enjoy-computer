@@ -1,3 +1,5 @@
+/* style cho product brief */
+
 #product-card {
     width: 100%;
     display: flex;
@@ -38,6 +40,9 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    padding: 0px;
+    border: none;
+    outline: none;
 }
 
 .active {
@@ -46,7 +51,11 @@
 }
 
 #payment-methods {
-    margin-top: 45px;
+    margin-top: 40px;
+}
+
+#payment-methods img {
+    height: 25px;
 }
 
 #payment-methods>div {
@@ -114,14 +123,16 @@
     box-sizing: border-box;
     border-radius: 7px;
     padding: 0px 10px;
-    margin-bottom: 68px;
+    margin-bottom: 47px;
 }
-.promotion-item{
+
+.promotion-item {
     display: flex;
     align-items: flex-start;
     font-size: 14px;
     margin: 10px 0px;
 }
+
 #gift-img-box {
     width: 30px;
     height: 30px;
@@ -129,10 +140,336 @@
     box-sizing: border-box;
 }
 
-#company-policy {
+#buy-now-btn {
+    width: 100%;
+    background: #FB0000;
+    border-radius: 5px;
+    border: none;
+    padding: 12px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+#buy-now-btn:hover {
+    background-color: #ca0000;
+}
+
+#installment-add-to-card-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sm-btn {
+    width: 49%;
+    border-radius: 5px;
+    border: none;
+    padding: 11px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.installment-btn {
+    background-color: rgba(38, 121, 255, 0.9);
+    color: white;
+}
+
+.installment-btn:hover {
+    background-color: rgba(0, 77, 201, 0.9);
+}
+
+.add-to-cart-btn {
+    background-color: white;
+    color: rgba(38, 121, 255, 0.9);
+    border: 1px solid rgba(38, 121, 255, 0.9);
+}
+
+.add-to-cart-btn:hover {
+    color: rgba(0, 77, 201, 0.9);
+}
+
+#company-policy-services {
     max-width: 286px;
+    height: fit-content;
     background-color: white;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     padding: 16px;
+    font-size: 14px;
 }
+
+#company-policy {
+    margin-bottom: 16px;
+}
+
+.company-policy-services-item {
+    display: flex;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+#company-policy-services img {
+    max-width: 24px;
+}
+
+#company-policy-services p {
+    font-weight: 600;
+    margin-bottom: 8px !important;
+}
+
+/* kết thúc style cho product brief */
+
+/* style cho product info */
+
+#product-information {
+    width: 100%;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+}
+
+#product-description {
+    max-width: 747px;
+    margin-right: 12px;
+}
+
+.product-information-title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 41px;
+    color: #222;
+    padding: 0px 10px;
+    font-size: 18px;
+}
+
+#product-description-content {
+    margin-top: 8px;
+    padding: 10px;
+    height: 1050px;
+    overflow: hidden;
+}
+
+#product-description-content h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0px 10px 0px;
+}
+
+#product-description-content p {
+    font-size: 14px;
+    margin-bottom: 20px !important;
+}
+
+#view-more-btn {
+    width: 126px;
+    margin: 16px;
+    border: 1px solid rgba(38, 121, 255, 0.9);
+    border-radius: 7px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: rgba(38, 121, 255, 0.9);
+    outline: none;
+}
+
+#specifications {
+    max-width: 401px;
+}
+
+#specifications-box {
+    width: 100%;
+    margin-top: 8px;
+}
+
+#specifications-box>div {
+    padding: 10px;
+}
+
+.product-info-key-value {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #222;
+    font-size: 14px;
+}
+
+.key {
+    width: 40%;
+}
+
+.value {
+    width: 60%;
+}
+
+.gray {
+    background-color: #f2f2f2;
+}
+
+/* kết thúc style cho product info */
+
+/* style cho same product */
+
+#same-product {
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.products {
+    margin-top: 1px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 12px;
+    grid-column-gap: 12px;
+    background-color: white;
+}
+
+.products>a {
+    padding: 4px;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.product {
+    width: 100%;
+    padding: 8px;
+    background-color: white;
+    transition: transform 0.2s ease-in-out;
+}
+
+.product:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.product-card {
+    width: 100%;
+    height: 134px;
+    margin-top: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-card-name {
+    width: 100%;
+    height: 58px;
+    font-size: 13px;
+    color: #222;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+.product-card-price {
+    width: 100%;
+    color: #004de5;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.product-card-old-price {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.old-price {
+    width: fit-content;
+    font-size: 12px;
+    text-decoration: line-through;
+    color: #797979;
+    font-weight: 500;
+}
+
+.discount-percent {
+    color: #40bf55;
+    font-size: 12px;
+    margin-left: 8px !important;
+    font-weight: 500;
+}
+
+.product-card-gift {
+    width: 100%;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-card-gift span {
+    color: #222;
+    font-size: 11px;
+}
+
+.product-card-gift-img {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.product-card-gift-img img {
+    width: 24px;
+    height: 24px;
+    margin-right: 4px;
+}
+
+.arrow-slick {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    background-color: black;
+    opacity: 0;
+    top: 50%;
+    border-radius: 50%;
+    transition: all 0.4s;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.products:hover .arrow-slick {
+    opacity: 0.5;
+}
+
+.arrow-slick:hover {
+    background-color: #a1a1a1;
+}
+
+.next-slick {
+    right: 20px;
+    left: auto;
+}
+
+.prev-slick {
+    left: 20px;
+    right: auto;
+}
+
+.caret {
+    visibility: visible;
+    color: white;
+}
+
+/* kết thúc style cho same product */
