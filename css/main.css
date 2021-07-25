@@ -98,6 +98,9 @@ header {
   border: none;
   outline: none;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #search-btn:hover {
@@ -238,14 +241,16 @@ header {
   max-width: 1200px;
   margin: auto;
 }
-#page-direction{
+
+#page-direction {
   max-width: 100%;
   margin: 20px 0px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
-#page-direction a{
+
+#page-direction a {
   width: fit-content;
   padding: 8px;
   background-color: white;
@@ -257,10 +262,12 @@ header {
   color: #222222;
   font-size: 14px;
 }
-#caret-right{
+
+#caret-right {
   width: 14px;
   margin: 0px 8px;
 }
+
 /* Kết thúc Style cho container */
 
 /* Style cho contact fixed */
@@ -454,6 +461,9 @@ footer {
   border: none;
   outline: none;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #mobile-menu-container {
@@ -724,6 +734,9 @@ footer {
     font-size: 14px;
   }
   /* contact fixed */
+  #contact-fixed {
+    right: 20px;
+  }
   #contact-fixed a {
     width: 40px !important;
     height: 40px !important;
@@ -751,8 +764,14 @@ footer {
     width: 100px;
   }
   #search-bar-tablet-mobile {
-    width: 46%;
+    width: 50%;
     height: 25px;
+  }
+  #search-btn-tablet-mobile {
+    width: 25px;
+  }
+  #search-btn-tablet-mobile i {
+    font-size: 12px;
   }
   #cart {
     width: 30px;
@@ -803,6 +822,9 @@ footer {
     text-align: center;
   }
   /* contact fixed */
+  #contact-fixed {
+    right: 20px;
+  }
   #contact-fixed a {
     width: 30px !important;
     height: 30px !important;

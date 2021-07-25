@@ -11,6 +11,13 @@ $(window).on('click', function (event) {
     }
 });
 
-$('#logo').on('click',function(){
-    window.location.href='/';
+$('#logo').on('click', function () {
+    window.location.href = '/';
 });
+$('#logo-tablet-mobile').on('click', function () {
+    window.location.href = '/';
+});
+
+$('.product-card-gift-img span').html('x1 túi đựng laptop 15"');
+
+

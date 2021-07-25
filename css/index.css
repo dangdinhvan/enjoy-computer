@@ -582,6 +582,7 @@
     .product-classification-title p {
         font-size: 14px;
         line-height: 20px;
+        top: -34px;
     }
     .classification {
         padding: 4px;
@@ -643,6 +644,7 @@
     .product-classification-title p {
         font-size: 14px;
         line-height: 20px;
+        top: -34px;
     }
     .classification {
         padding: 4px;
@@ -686,11 +688,21 @@
     .last-product {
         display: none;
     }
+    .products-special-box-header {
+        padding: 4px 8px;
+    }
     .products-special-box-header>p {
-        font-size: 14px;
+        font-size: 13px;
     }
     .products-special-box-header>a {
         padding: 4px;
+        font-size: 10px;
+    }
+    .product-card-gift {
+        justify-content: flex-start;
+    }
+    .product-card-gift-img {
+        margin-left: 8px;
     }
     .product-card-gift-img img {
         width: 20px;
@@ -703,19 +715,23 @@
     .classification {
         display: none;
     }
+    .product-classification-header {
+        padding: 4px 8px 4px 0px;
+        height: 33px;
+    }
     .product-classification-title {
         width: 180px;
+        border-top: 33px solid rgba(38, 121, 255, 0.9);
+        border-right: 35px solid transparent;
     }
     .product-classification-title p {
         font-size: 12px;
-        line-height: 18px;
-        top: -34px;
+        line-height: 21px;
+        top: -27px;
+        left: 8px;
     }
-    .classification {
+    .view-all {
         padding: 4px;
-    }
-    .classification a {
-        margin: 0px 3px;
-        font-size: 12px;
+        font-size: 10px;
     }
 }
