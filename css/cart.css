@@ -1,0 +1,368 @@
+#content {
+    width: 100%;
+    display: flex;
+}
+
+#cart-box {
+    width: 67.83%;
+    height: fit-content;
+    border-radius: 10px;
+    background-color: white;
+    margin-right: 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+#cart-box input[type='checkbox'] {
+    margin-right: 10px;
+}
+
+#cart-box-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    border-bottom: #d6d6d6 solid 1px;
+}
+
+#cart-box-header span {
+    color: #222;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    margin-right: 12px;
+}
+
+#delete-all {
+    border: rgba(38, 121, 255, 0.9) solid 1px;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 4px 6px;
+    color: rgba(38, 121, 255, 0.9);
+}
+
+#delete-all:hover {
+    background-color: rgba(38, 121, 255, 0.9);
+    color: white;
+}
+
+#total-cost {
+    display: flex;
+    align-items: center;
+}
+
+#total-cost span {
+    color: #fb0000;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+#cart-box-content {
+    width: 100%;
+    padding: 16px;
+}
+
+.checkbox-product-info {
+    max-width: 511px;
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+}
+
+.product {
+    width: 100%;
+}
+
+.main-product {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-info {
+    max-width: 475px;
+    display: flex;
+}
+
+.product-img {
+    max-width: 78px;
+    max-height: 78px;
+    border: #d0d0d0 solid 1px;
+    margin-right: 12px;
+}
+
+.product-name {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.product-count-box {
+    max-width: 85px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 5px;
+    border: rgba(38, 121, 255, 0.9) solid 1px;
+    overflow: hidden;
+}
+
+.product-count-box input {
+    width: 100%;
+    text-align: center;
+    color: rgba(38, 121, 255, 0.9);
+    border: none;
+    padding: 5px 0px;
+}
+
+.product-count-box button {
+    border: none;
+    background-color: white;
+    padding: 5px 0px;
+}
+
+.product-count-box button:hover {
+    background-color: #e1e8ff;
+}
+
+.product-count-box button:active {
+    color: #fb0000;
+}
+
+.price {
+    font-weight: 600;
+    color: #004de5;
+    margin: 0px 8px;
+}
+
+.del-btn {
+    border: none;
+    background-color: white;
+    color: #fb0000;
+    padding: 0px;
+}
+.del-btn:hover{
+    color: #aa0000;
+}
+
+.gift-product {
+    display: flex;
+    align-items: center;
+    margin: 8px 12px 0px 71px;
+}
+
+.gift-product div {
+    font-size: 14px;
+}
+
+.gift-product-img {
+    width: 30px;
+    height: 30px;
+    border: #d0d0d0 solid 1px;
+    margin-right: 12px;
+}
+
+#voucher-and-payment {
+    width: 30.5%;
+}
+
+#voucher {
+    width: 100%;
+    background-color: white;
+    padding: 16px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.voucher-and-payment-header {
+    font-size: 20px;
+    color: #222;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+#apply-voucher {
+    width: 100%;
+    height: 43px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+#apply-voucher input {
+    width: 65.87%;
+    padding: 8px;
+    background-color: #ebebeb;
+    color: rgba(0, 0, 0, 0.6);
+    border: none;
+    border-radius: 7px;
+    outline: none;
+}
+
+#apply-voucher input:focus {
+    border: rgba(118, 170, 255, 0.9) solid 2px;
+}
+
+#apply-voucher button {
+    width: 31.74%;
+    padding: 8px;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    background-color: #fb0000;
+    color: white;
+}
+
+#result-apply-voucher {
+    width: 100%;
+    display: none;
+}
+
+#alert-result {
+    font-weight: 600;
+    margin-top: 12px !important;
+}
+
+#result-voucher {
+    font-weight: 600;
+    margin-top: 8px !important;
+    color: #222;
+}
+
+#payment {
+    width: 100%;
+    background-color: white;
+    padding: 16px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.payment-line {
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #222;
+}
+
+#total-bill, #total-voucher {
+    font-weight: 600;
+}
+
+#total-payment {
+    font-weight: 600;
+    font-size: 20px;
+    color: #fb0000;
+}
+
+.total-voucher.hide {
+    display: none;
+}
+
+#text-vat {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#purchase {
+    width: 100%;
+    padding: 12px;
+    background-color: #1f66d8;
+    border-radius: 7px;
+    margin-top: 12px;
+    border: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+}
+
+#purchase:hover {
+    background-color: rgb(49, 49, 187);
+}
+
+/* modal delete*/
+
+#modal-container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    visibility: hidden;
+}
+
+.modal-box {
+    width: 400px;
+    height: fit-content;
+    border-radius: 7px;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+}
+
+.modal-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h4 {
+    margin: 0px;
+}
+
+.modal-body {
+    padding: 15px;
+    line-height: 1.5;
+}
+
+.modal-footer {
+    padding: 0px;
+    border: none;
+}
+
+.btn {
+    width: 75px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 12px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.close-btn {
+    background-color: #c4c4c4;
+    margin-right: 7px;
+}
+
+.close-btn:hover {
+    background-color: #9e9e9e;
+}
+
+.delete-confirm-btn {
+    background-color: royalblue;
+    color: white;
+}
+
+.delete-confirm-btn:hover {
+    background-color: rgb(53, 84, 177);
+    color: white;
+}
+
+#modal-container.show {
+    visibility: visible;
+}

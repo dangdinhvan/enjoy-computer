@@ -81,3 +81,7 @@ function activeImg(imgNumber) {
         $("#img-active").attr("src", "img/laptop-img-6.webp");
     }
 }
+// buy now button
+$('#buy-now-btn').click(function(){
+    window.location.href='./cart.html';
+});
