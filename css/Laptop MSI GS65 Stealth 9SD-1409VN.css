@@ -45,7 +45,7 @@
     outline: none;
 }
 
-.active {
+.sub-img-active {
     border: 1px solid #4000F4;
     border-radius: 7px;
 }
@@ -327,22 +327,6 @@
     padding: 10px;
 }
 
-.products {
-    margin-top: 1px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    padding: 12px;
-    grid-column-gap: 12px;
-    background-color: white;
-}
-
-.products>a {
-    padding: 4px;
-    background-color: white;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
 .product {
     width: 100%;
     padding: 8px;
@@ -473,3 +457,291 @@
 }
 
 /* kết thúc style cho same product */
+
+/* responsive cho màn hình từ 1025px - 1200px */
+
+@media(min-width:1025px) and (max-width:1200px) {
+    #product-card {
+        flex-direction: column;
+    }
+    #product-brief {
+        width: 100%;
+        margin: 0px;
+        justify-content: center;
+    }
+    #product-brief-left {
+        margin-right: 40px;
+    }
+    #product-brief-right {
+        max-width: 590px;
+    }
+    #company-policy-services {
+        max-width: 100%;
+        display: flex;
+        margin-top: 20px;
+        padding: 16px 20px;
+    }
+    #company-policy {
+        margin-right: 80px;
+    }
+    #product-description {
+        max-width: 600px;
+    }
+    .product-card-gift span {
+        font-size: 13px;
+    }
+    .product-card-gift {
+        justify-content: flex-start;
+    }
+    .product-card-gift-img {
+        margin-left: 8px;
+    }
+    .product-card-gift-img img {
+        width: 20px;
+        height: 20px;
+        margin-right: 2px;
+    }
+    .product-card-gift-img span {
+        display: none;
+    }
+}
+
+/* responsive cho màn hình từ 768px - 1024px */
+
+@media(min-width:768px) and (max-width:1024px) {
+    #product-card {
+        flex-direction: column;
+    }
+    #product-brief {
+        width: 100%;
+        margin: 0px;
+        justify-content: center;
+        padding: 12px;
+    }
+    #product-brief-left {
+        max-width: 290px;
+        margin-right: 12px;
+    }
+    .sub-img {
+        width: 45px;
+        height: 45px;
+    }
+    #payment-methods>div {
+        font-size: 13px;
+        flex-wrap: wrap;
+    }
+    #product-name {
+        font-size: 20px;
+    }
+    #current-price {
+        font-size: 20px;
+    }
+    #promotion {
+        margin-bottom: 40px;
+    }
+    #buy-now-btn {
+        font-size: 18px;
+    }
+    .sm-btn {
+        font-size: 16px;
+    }
+    #company-policy-services {
+        max-width: 100%;
+        display: flex;
+        margin-top: 20px;
+        padding: 16px 20px;
+    }
+    #company-policy {
+        margin-right: 80px;
+    }
+    #product-information {
+        flex-direction: column;
+    }
+    #product-description {
+        max-width: 100%;
+    }
+    #product-description-content img {
+        width: 100%;
+    }
+    #specifications {
+        max-width: 100%;
+    }
+}
+
+/* responsive cho màn hình từ 576px - 767px */
+
+@media(min-width:576px) and (max-width:767px) {
+    #product-card {
+        flex-direction: column;
+    }
+    #product-brief {
+        width: 100%;
+        margin: 0px;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 20px 20px 20px;
+    }
+    #product-brief-left {
+        max-width: 100%;
+        margin: 0px;
+    }
+    .sub-img {
+        width: 75px;
+        height: 75px;
+    }
+    #payment-methods {
+        display: none;
+    }
+    #product-brief-right {
+        margin-top: 15px;
+        max-width: 100%;
+    }
+    #product-name {
+        font-size: 20px;
+    }
+    #current-price {
+        font-size: 20px;
+    }
+    #promotion {
+        margin-bottom: 40px;
+    }
+    #buy-now-btn {
+        font-size: 18px;
+    }
+    .sm-btn {
+        font-size: 16px;
+    }
+    #company-policy-services {
+        max-width: 100%;
+        display: flex;
+        margin-top: 20px;
+        padding: 16px 20px;
+    }
+    #product-information {
+        flex-direction: column;
+    }
+    #product-description {
+        max-width: 100%;
+    }
+    #product-description-content img {
+        width: 100%;
+    }
+    #specifications {
+        max-width: 100%;
+    }
+    #view-more-btn {
+        padding: 8px 6px;
+    }
+    .product-card-gift span {
+        font-size: 13px;
+    }
+    .product-card-gift {
+        justify-content: flex-start;
+    }
+    .product-card-gift-img {
+        margin-left: 8px;
+    }
+    .product-card-gift-img img {
+        width: 20px;
+        height: 20px;
+        margin-right: 2px;
+    }
+    .product-card-gift-img span {
+        display: none;
+    }
+}
+
+/* responsive cho màn hình từ 320px - 575px */
+
+@media(min-width:320px) and (max-width:575px) {
+    #page-direction {
+        display: none !important;
+    }
+    #product-card {
+        flex-direction: column;
+    }
+    #product-brief {
+        width: 100%;
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 10px 10px 10px;
+    }
+    #product-brief-left {
+        max-width: 100%;
+        margin: 0px;
+    }
+    .sub-img {
+        width: 50px;
+        height: 50px;
+    }
+    #payment-methods {
+        display: none;
+    }
+    #product-brief-right {
+        margin-top: 15px;
+        max-width: 100%;
+    }
+    #product-name {
+        font-size: 18px;
+    }
+    #current-price {
+        font-size: 18px;
+    }
+    #promotion {
+        margin-bottom: 40px;
+    }
+    #buy-now-btn {
+        font-size: 16px;
+    }
+    .sm-btn {
+        font-size: 13px;
+    }
+    #company-policy-services {
+        max-width: 100%;
+        margin-top: 16px;
+        padding: 10px;
+        font-size: 13px;
+    }
+    #product-information {
+        flex-direction: column;
+        padding: 6px;
+    }
+    h4{
+        font-size: 16px !important;
+    }
+    #product-description {
+        max-width: 100%;
+    }
+    #product-description-content img {
+        width: 100%;
+    }
+    #specifications {
+        max-width: 100%;
+    }
+    #view-more-btn {
+        font-size: 14px;
+        padding: 5px;
+        margin: 4px 0px 16px 0px;
+    }
+    .product-info-key-value{
+        font-size: 13px;
+    }
+    .product-card-gift span {
+        font-size: 13px;
+    }
+    .product-card-gift {
+        justify-content: flex-start;
+    }
+    .product-card-gift-img {
+        margin-left: 8px;
+    }
+    .product-card-gift-img img {
+        width: 20px;
+        height: 20px;
+        margin-right: 2px;
+    }
+    .product-card-gift-img span {
+        display: none;
+    }
+}
