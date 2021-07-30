@@ -1,0 +1,1489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/dat-hang.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Đặt hàng</title>
+</head>
+
+<body>
+    <header>
+        <div id="nav-bar">
+            <img id="logo" src="img/logo-favicon.png" alt="logo">
+            <div id="items">
+                <div id="upline">
+                    <div id="search-bar">
+                        <input id="input-search" type="text" placeholder="Tìm kiếm sản phẩm">
+                        <button id="search-btn" style="color: white; font-size: 16px;"><i
+                                class="fas fa-search"></i></button>
+                    </div>
+                    <div id="items-of-upline">
+                        <a href="#" class="upline-item">
+                            <i class="fas fa-phone-alt icon"></i>
+                            <div class="text-upline-item">
+                                <p id="text-hotline">Hot line</p>
+                                <p id="hotline-number">19006868</p>
+                            </div>
+                        </a>
+                        <a href="#" class="upline-item">
+                            <i class="fas fa-desktop icon"></i>
+                            <div class="text-upline-item">
+                                <p>Xây dựng</p>
+                                <p>cấu hình PC</p>
+                            </div>
+                        </a>
+                        <a href="#" class="upline-item">
+                            <i class="fas fa-user-circle icon"></i>
+                            <div class="text-upline-item">
+                                <p>Đăng nhập</p>
+                                <p>Đăng ký</p>
+                            </div>
+                        </a>
+                        <a href="./cart.html" class="upline-item">
+                            <img id="cart" src="img/cart.png" alt="cart">
+                            <div id="cart-count">0</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="underline">
+                    <a class="items-of-underline" href="#">
+                        <div><i class="fas fa-paste items-of-underline-icon"></i></div>
+                        <p>Tin tức công nghệ</p>
+                    </a>
+                    <a class="items-of-underline" href="#">
+                        <div><i class="fas fa-bolt items-of-underline-icon"></i></div>
+                        <p>Chương trình khuyến mãi</p>
+                    </a>
+                    <a class="items-of-underline" href="#">
+                        <div><i class="fas fa-coins items-of-underline-icon"></i></div>
+                        <p>Hướng dẫn trả góp</p>
+                    </a>
+                    <a class="items-of-underline" href="#">
+                        <div><i class="fas fa-tools items-of-underline-icon"></i></div>
+                        <p>Chính sách bảo hành</p>
+                    </a>
+                    <a class="items-of-underline" href="#">
+                        <div><i class="fas fa-sync items-of-underline-icon"></i></div>
+                        <p>Đổi trả miễn phí</p>
+                    </a>
+                    <a class="items-of-underline" href="#">
+                        <div><i class="fas fa-truck items-of-underline-icon"></i></div>
+                        <p>Miễn phí vận chuyển</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- header tablet-mobile -->
+        <div id="header-tablet-mobile">
+            <div id="hamberger"><i class="fas fa-bars hamberger" onclick="showHideMenu()"></i></div>
+            <div id="logo-search-tablet-mobile">
+                <img id="logo-tablet-mobile" src="img/logo-tablet-mobile.png" alt="logo">
+                <div id="search-bar-tablet-mobile">
+                    <input id="input-search-tablet-mobile" type="text" placeholder="Tìm kiếm sản phẩm">
+                    <button id="search-btn-tablet-mobile" style="color: white; font-size: 16px;"><i
+                            class="fas fa-search"></i></button>
+                </div>
+            </div>
+            <a href="./cart.html" class="upline-item">
+                <img id="cart" src="img/cart.png" alt="cart">
+                <div id="cart-count">0</div>
+            </a>
+        </div>
+        <!-- menu tablet mobile -->
+        <div id="mobile-menu-container">
+            <div id="mobile-menu">
+
+                <div id="signin-signup">
+                    <div><i class="fas fa-user-circle"></i></div>
+                    <a href="#">Đăng nhập / Đăng ký</a>
+                </div>
+
+                <p style="font-size: 14px; color: rgba(38, 121, 255, 0.9); font-weight: 500;">Danh mục sản phẩm</p>
+
+                <div class="mobile-menu-item-lv-1">
+                    <a href="">PC, Workstation</a>
+                    <input type="checkbox" id="A">
+                    <label for="A"><i class="fa fa-caret-right submenu-caret"></i></label>
+
+                    <ul>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo thương hiệu</a>
+                                <input type="checkbox" id="A-1">
+                                <label for="A-1"><i class="fa fa-caret-right submenu-caret"></i></label>
+
+                                <ul>
+                                    <li><a href="#">MSI</a></li>
+                                    <li><a href="#">ASUS</a></li>
+                                    <li><a href="#">Gigabyte</a></li>
+                                    <li><a href="#">HP</a></li>
+                                    <li><a href="#">DELL</a></li>
+                                    <li><a href="#">ACER</a></li>
+                                    <li><a href="#">Lenovo</a></li>
+                                    <li><a href="#">Apple</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo nhu cầu</a>
+                                <input type="checkbox" id="A-2">
+                                <label for="A-2"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">Văn phòng</a></li>
+                                    <li><a href="#">Gaming</a></li>
+                                    <li><a href="#">Đồ họa</a></li>
+                                    <li><a href="#">PC All in one</a></li>
+                                    <li><a href="#">PC Mini</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo tầm giá</a>
+                                <input type="checkbox" id="A-3">
+                                <label for="A-3"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">Dưới 10 triệu</a></li>
+                                    <li><a href="#">Từ 10 triệu - 15 triệu</a></li>
+                                    <li><a href="#">Từ 15 triệu - 20 triệu</a></li>
+                                    <li><a href="#">Từ 20 triệu - 25 triệu</a></li>
+                                    <li><a href="#">Trên 25 triệu</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">Máy trạm Workstation</a>
+                                <input type="checkbox" id="A-4">
+                                <label for="A-4"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">DELL Workstation</a></li>
+                                    <li><a href="#">HP Workstation</a></li>
+                                    <li><a href="#">Render, đồ họa Workstation</a></li>
+                                    <li><a href="#">Deep learning Workstation</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo cấu hình chip</a>
+                                <input type="checkbox" id="A-5">
+                                <label for="A-5"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">Intel Core-i3</a></li>
+                                    <li><a href="#">Intel Core-i5</a></li>
+                                    <li><a href="#">Intel Core-i7</a></li>
+                                    <li><a href="#">Intel Core-i9</a></li>
+                                    <li><a href="#">AMD Ryzen 3</a></li>
+                                    <li><a href="#">AMD Ryzen 5</a></li>
+                                    <li><a href="#">AMD Ryzen 7</a></li>
+                                    <li><a href="#">AMD Ryzen 9</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mobile-menu-item-lv-1">
+                    <a href="">Laptop</a>
+                    <input type="checkbox" id="B">
+                    <label for="B"><i class="fa fa-caret-right submenu-caret"></i></label>
+
+                    <ul>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo thương hiệu</a>
+                                <input type="checkbox" id="B-1">
+                                <label for="B-1"><i class="fa fa-caret-right submenu-caret"></i></label>
+
+                                <ul>
+                                    <li><a href="#">MSI</a></li>
+                                    <li><a href="#">ASUS</a></li>
+                                    <li><a href="#">Gigabyte</a></li>
+                                    <li><a href="#">HP</a></li>
+                                    <li><a href="#">DELL</a></li>
+                                    <li><a href="#">ACER</a></li>
+                                    <li><a href="#">Lenovo</a></li>
+                                    <li><a href="#">Apple</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo nhu cầu</a>
+                                <input type="checkbox" id="B-2">
+                                <label for="B-2"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">Văn phòng</a></li>
+                                    <li><a href="#">Gaming</a></li>
+                                    <li><a href="#">Đồ họa</a></li>
+                                    <li><a href="#">PC All in one</a></li>
+                                    <li><a href="#">PC Mini</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo tầm giá</a>
+                                <input type="checkbox" id="B-3">
+                                <label for="B-3"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">Dưới 10 triệu</a></li>
+                                    <li><a href="#">Từ 10 triệu - 15 triệu</a></li>
+                                    <li><a href="#">Từ 15 triệu - 20 triệu</a></li>
+                                    <li><a href="#">Từ 20 triệu - 25 triệu</a></li>
+                                    <li><a href="#">Trên 25 triệu</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">Máy trạm Workstation</a>
+                                <input type="checkbox" id="B-4">
+                                <label for="B-4"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">DELL Workstation</a></li>
+                                    <li><a href="#">HP Workstation</a></li>
+                                    <li><a href="#">Render, đồ họa Workstation</a></li>
+                                    <li><a href="#">Deep learning Workstation</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo cấu hình chip</a>
+                                <input type="checkbox" id="B-5">
+                                <label for="B-5"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">Intel Core-i3</a></li>
+                                    <li><a href="#">Intel Core-i5</a></li>
+                                    <li><a href="#">Intel Core-i7</a></li>
+                                    <li><a href="#">Intel Core-i9</a></li>
+                                    <li><a href="#">AMD Ryzen 3</a></li>
+                                    <li><a href="#">AMD Ryzen 5</a></li>
+                                    <li><a href="#">AMD Ryzen 7</a></li>
+                                    <li><a href="#">AMD Ryzen 9</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mobile-menu-item-lv-1">
+                    <a href="">CPU - Bộ vi xử lý</a>
+                    <input type="checkbox" id="C">
+                    <label for="C"><i class="fa fa-caret-right submenu-caret"></i></label>
+
+                    <ul>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo thương hiệu</a>
+                                <input type="checkbox" id="C-1">
+                                <label for="C-1"><i class="fa fa-caret-right submenu-caret"></i></label>
+
+                                <ul>
+                                    <li><a href="#">MSI</a></li>
+                                    <li><a href="#">ASUS</a></li>
+                                    <li><a href="#">Gigabyte</a></li>
+                                    <li><a href="#">HP</a></li>
+                                    <li><a href="#">DELL</a></li>
+                                    <li><a href="#">ACER</a></li>
+                                    <li><a href="#">Lenovo</a></li>
+                                    <li><a href="#">Apple</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo nhu cầu</a>
+                                <input type="checkbox" id="C-2">
+                                <label for="C-2"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">Văn phòng</a></li>
+                                    <li><a href="#">Gaming</a></li>
+                                    <li><a href="#">Đồ họa</a></li>
+                                    <li><a href="#">PC All in one</a></li>
+                                    <li><a href="#">PC Mini</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo tầm giá</a>
+                                <input type="checkbox" id="C-3">
+                                <label for="C-3"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">Dưới 10 triệu</a></li>
+                                    <li><a href="#">Từ 10 triệu - 15 triệu</a></li>
+                                    <li><a href="#">Từ 15 triệu - 20 triệu</a></li>
+                                    <li><a href="#">Từ 20 triệu - 25 triệu</a></li>
+                                    <li><a href="#">Trên 25 triệu</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">Máy trạm Workstation</a>
+                                <input type="checkbox" id="C-4">
+                                <label for="C-4"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">DELL Workstation</a></li>
+                                    <li><a href="#">HP Workstation</a></li>
+                                    <li><a href="#">Render, đồ họa Workstation</a></li>
+                                    <li><a href="#">Deep learning Workstation</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo cấu hình chip</a>
+                                <input type="checkbox" id="C-5">
+                                <label for="C-5"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">Intel Core-i3</a></li>
+                                    <li><a href="#">Intel Core-i5</a></li>
+                                    <li><a href="#">Intel Core-i7</a></li>
+                                    <li><a href="#">Intel Core-i9</a></li>
+                                    <li><a href="#">AMD Ryzen 3</a></li>
+                                    <li><a href="#">AMD Ryzen 5</a></li>
+                                    <li><a href="#">AMD Ryzen 7</a></li>
+                                    <li><a href="#">AMD Ryzen 9</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mobile-menu-item-lv-1">
+                    <a href="">Main - Bo mạch chủ</a>
+                    <input type="checkbox" id="D">
+                    <label for="D"><i class="fa fa-caret-right submenu-caret"></i></label>
+
+                    <ul>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo thương hiệu</a>
+                                <input type="checkbox" id="D-1">
+                                <label for="D-1"><i class="fa fa-caret-right submenu-caret"></i></label>
+
+                                <ul>
+                                    <li><a href="#">MSI</a></li>
+                                    <li><a href="#">ASUS</a></li>
+                                    <li><a href="#">Gigabyte</a></li>
+                                    <li><a href="#">HP</a></li>
+                                    <li><a href="#">DELL</a></li>
+                                    <li><a href="#">ACER</a></li>
+                                    <li><a href="#">Lenovo</a></li>
+                                    <li><a href="#">Apple</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo nhu cầu</a>
+                                <input type="checkbox" id="D-2">
+                                <label for="D-2"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">Văn phòng</a></li>
+                                    <li><a href="#">Gaming</a></li>
+                                    <li><a href="#">Đồ họa</a></li>
+                                    <li><a href="#">PC All in one</a></li>
+                                    <li><a href="#">PC Mini</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo tầm giá</a>
+                                <input type="checkbox" id="D-3">
+                                <label for="D-3"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">Dưới 10 triệu</a></li>
+                                    <li><a href="#">Từ 10 triệu - 15 triệu</a></li>
+                                    <li><a href="#">Từ 15 triệu - 20 triệu</a></li>
+                                    <li><a href="#">Từ 20 triệu - 25 triệu</a></li>
+                                    <li><a href="#">Trên 25 triệu</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">Máy trạm Workstation</a>
+                                <input type="checkbox" id="D-4">
+                                <label for="D-4"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">DELL Workstation</a></li>
+                                    <li><a href="#">HP Workstation</a></li>
+                                    <li><a href="#">Render, đồ họa Workstation</a></li>
+                                    <li><a href="#">Deep learning Workstation</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo cấu hình chip</a>
+                                <input type="checkbox" id="D-5">
+                                <label for="D-5"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">Intel Core-i3</a></li>
+                                    <li><a href="#">Intel Core-i5</a></li>
+                                    <li><a href="#">Intel Core-i7</a></li>
+                                    <li><a href="#">Intel Core-i9</a></li>
+                                    <li><a href="#">AMD Ryzen 3</a></li>
+                                    <li><a href="#">AMD Ryzen 5</a></li>
+                                    <li><a href="#">AMD Ryzen 7</a></li>
+                                    <li><a href="#">AMD Ryzen 9</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mobile-menu-item-lv-1">
+                    <a href="#">RAM</a>
+                    <input type="checkbox" id="E">
+                    <label for="E"><i class="fa fa-caret-right submenu-caret"></i></label>
+
+                    <ul>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo thương hiệu</a>
+                                <input type="checkbox" id="E-1">
+                                <label for="E-1"><i class="fa fa-caret-right submenu-caret"></i></label>
+
+                                <ul>
+                                    <li><a href="#">MSI</a></li>
+                                    <li><a href="#">ASUS</a></li>
+                                    <li><a href="#">Gigabyte</a></li>
+                                    <li><a href="#">HP</a></li>
+                                    <li><a href="#">DELL</a></li>
+                                    <li><a href="#">ACER</a></li>
+                                    <li><a href="#">Lenovo</a></li>
+                                    <li><a href="#">Apple</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo nhu cầu</a>
+                                <input type="checkbox" id="E-2">
+                                <label for="E-2"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">Văn phòng</a></li>
+                                    <li><a href="#">Gaming</a></li>
+                                    <li><a href="#">Đồ họa</a></li>
+                                    <li><a href="#">PC All in one</a></li>
+                                    <li><a href="#">PC Mini</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo tầm giá</a>
+                                <input type="checkbox" id="E-3">
+                                <label for="E-3"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">Dưới 10 triệu</a></li>
+                                    <li><a href="#">Từ 10 triệu - 15 triệu</a></li>
+                                    <li><a href="#">Từ 15 triệu - 20 triệu</a></li>
+                                    <li><a href="#">Từ 20 triệu - 25 triệu</a></li>
+                                    <li><a href="#">Trên 25 triệu</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">Máy trạm Workstation</a>
+                                <input type="checkbox" id="E-4">
+                                <label for="E-4"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">DELL Workstation</a></li>
+                                    <li><a href="#">HP Workstation</a></li>
+                                    <li><a href="#">Render, đồ họa Workstation</a></li>
+                                    <li><a href="#">Deep learning Workstation</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo cấu hình chip</a>
+                                <input type="checkbox" id="E-5">
+                                <label for="E-5"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">Intel Core-i3</a></li>
+                                    <li><a href="#">Intel Core-i5</a></li>
+                                    <li><a href="#">Intel Core-i7</a></li>
+                                    <li><a href="#">Intel Core-i9</a></li>
+                                    <li><a href="#">AMD Ryzen 3</a></li>
+                                    <li><a href="#">AMD Ryzen 5</a></li>
+                                    <li><a href="#">AMD Ryzen 7</a></li>
+                                    <li><a href="#">AMD Ryzen 9</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mobile-menu-item-lv-1">
+                    <a href="#">VGA - Card màn hình</a>
+                    <input type="checkbox" id="F">
+                    <label for="F"><i class="fa fa-caret-right submenu-caret"></i></label>
+
+                    <ul>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo thương hiệu</a>
+                                <input type="checkbox" id="F-1">
+                                <label for="F-1"><i class="fa fa-caret-right submenu-caret"></i></label>
+
+                                <ul>
+                                    <li><a href="#">MSI</a></li>
+                                    <li><a href="#">ASUS</a></li>
+                                    <li><a href="#">Gigabyte</a></li>
+                                    <li><a href="#">HP</a></li>
+                                    <li><a href="#">DELL</a></li>
+                                    <li><a href="#">ACER</a></li>
+                                    <li><a href="#">Lenovo</a></li>
+                                    <li><a href="#">Apple</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo nhu cầu</a>
+                                <input type="checkbox" id="F-2">
+                                <label for="F-2"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">Văn phòng</a></li>
+                                    <li><a href="#">Gaming</a></li>
+                                    <li><a href="#">Đồ họa</a></li>
+                                    <li><a href="#">PC All in one</a></li>
+                                    <li><a href="#">PC Mini</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo tầm giá</a>
+                                <input type="checkbox" id="F-3">
+                                <label for="F-3"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">Dưới 10 triệu</a></li>
+                                    <li><a href="#">Từ 10 triệu - 15 triệu</a></li>
+                                    <li><a href="#">Từ 15 triệu - 20 triệu</a></li>
+                                    <li><a href="#">Từ 20 triệu - 25 triệu</a></li>
+                                    <li><a href="#">Trên 25 triệu</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">Máy trạm Workstation</a>
+                                <input type="checkbox" id="F-4">
+                                <label for="F-4"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">DELL Workstation</a></li>
+                                    <li><a href="#">HP Workstation</a></li>
+                                    <li><a href="#">Render, đồ họa Workstation</a></li>
+                                    <li><a href="#">Deep learning Workstation</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo cấu hình chip</a>
+                                <input type="checkbox" id="F-5">
+                                <label for="F-5"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">Intel Core-i3</a></li>
+                                    <li><a href="#">Intel Core-i5</a></li>
+                                    <li><a href="#">Intel Core-i7</a></li>
+                                    <li><a href="#">Intel Core-i9</a></li>
+                                    <li><a href="#">AMD Ryzen 3</a></li>
+                                    <li><a href="#">AMD Ryzen 5</a></li>
+                                    <li><a href="#">AMD Ryzen 7</a></li>
+                                    <li><a href="#">AMD Ryzen 9</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mobile-menu-item-lv-1">
+                    <a href="#">Monitor - Mành hình</a>
+                    <input type="checkbox" id="G">
+                    <label for="G"><i class="fa fa-caret-right submenu-caret"></i></label>
+
+                    <ul>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo thương hiệu</a>
+                                <input type="checkbox" id="G-1">
+                                <label for="G-1"><i class="fa fa-caret-right submenu-caret"></i></label>
+
+                                <ul>
+                                    <li><a href="#">MSI</a></li>
+                                    <li><a href="#">ASUS</a></li>
+                                    <li><a href="#">Gigabyte</a></li>
+                                    <li><a href="#">HP</a></li>
+                                    <li><a href="#">DELL</a></li>
+                                    <li><a href="#">ACER</a></li>
+                                    <li><a href="#">Lenovo</a></li>
+                                    <li><a href="#">Apple</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo nhu cầu</a>
+                                <input type="checkbox" id="G-2">
+                                <label for="G-2"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">Văn phòng</a></li>
+                                    <li><a href="#">Gaming</a></li>
+                                    <li><a href="#">Đồ họa</a></li>
+                                    <li><a href="#">PC All in one</a></li>
+                                    <li><a href="#">PC Mini</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo tầm giá</a>
+                                <input type="checkbox" id="G-3">
+                                <label for="G-3"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">Dưới 10 triệu</a></li>
+                                    <li><a href="#">Từ 10 triệu - 15 triệu</a></li>
+                                    <li><a href="#">Từ 15 triệu - 20 triệu</a></li>
+                                    <li><a href="#">Từ 20 triệu - 25 triệu</a></li>
+                                    <li><a href="#">Trên 25 triệu</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">Máy trạm Workstation</a>
+                                <input type="checkbox" id="G-4">
+                                <label for="G-4"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">DELL Workstation</a></li>
+                                    <li><a href="#">HP Workstation</a></li>
+                                    <li><a href="#">Render, đồ họa Workstation</a></li>
+                                    <li><a href="#">Deep learning Workstation</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo cấu hình chip</a>
+                                <input type="checkbox" id="G-5">
+                                <label for="G-5"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">Intel Core-i3</a></li>
+                                    <li><a href="#">Intel Core-i5</a></li>
+                                    <li><a href="#">Intel Core-i7</a></li>
+                                    <li><a href="#">Intel Core-i9</a></li>
+                                    <li><a href="#">AMD Ryzen 3</a></li>
+                                    <li><a href="#">AMD Ryzen 5</a></li>
+                                    <li><a href="#">AMD Ryzen 7</a></li>
+                                    <li><a href="#">AMD Ryzen 9</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mobile-menu-item-lv-1">
+                    <a href="#">Thiết bị lưu trữ</a>
+                    <input type="checkbox" id="H">
+                    <label for="H"><i class="fa fa-caret-right submenu-caret"></i></label>
+
+                    <ul>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo thương hiệu</a>
+                                <input type="checkbox" id="H-1">
+                                <label for="H-1"><i class="fa fa-caret-right submenu-caret"></i></label>
+
+                                <ul>
+                                    <li><a href="#">MSI</a></li>
+                                    <li><a href="#">ASUS</a></li>
+                                    <li><a href="#">Gigabyte</a></li>
+                                    <li><a href="#">HP</a></li>
+                                    <li><a href="#">DELL</a></li>
+                                    <li><a href="#">ACER</a></li>
+                                    <li><a href="#">Lenovo</a></li>
+                                    <li><a href="#">Apple</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo nhu cầu</a>
+                                <input type="checkbox" id="H-2">
+                                <label for="H-2"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">Văn phòng</a></li>
+                                    <li><a href="#">Gaming</a></li>
+                                    <li><a href="#">Đồ họa</a></li>
+                                    <li><a href="#">PC All in one</a></li>
+                                    <li><a href="#">PC Mini</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo tầm giá</a>
+                                <input type="checkbox" id="H-3">
+                                <label for="H-3"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">Dưới 10 triệu</a></li>
+                                    <li><a href="#">Từ 10 triệu - 15 triệu</a></li>
+                                    <li><a href="#">Từ 15 triệu - 20 triệu</a></li>
+                                    <li><a href="#">Từ 20 triệu - 25 triệu</a></li>
+                                    <li><a href="#">Trên 25 triệu</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">Máy trạm Workstation</a>
+                                <input type="checkbox" id="H-4">
+                                <label for="H-4"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">DELL Workstation</a></li>
+                                    <li><a href="#">HP Workstation</a></li>
+                                    <li><a href="#">Render, đồ họa Workstation</a></li>
+                                    <li><a href="#">Deep learning Workstation</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo cấu hình chip</a>
+                                <input type="checkbox" id="H-5">
+                                <label for="H-5"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">Intel Core-i3</a></li>
+                                    <li><a href="#">Intel Core-i5</a></li>
+                                    <li><a href="#">Intel Core-i7</a></li>
+                                    <li><a href="#">Intel Core-i9</a></li>
+                                    <li><a href="#">AMD Ryzen 3</a></li>
+                                    <li><a href="#">AMD Ryzen 5</a></li>
+                                    <li><a href="#">AMD Ryzen 7</a></li>
+                                    <li><a href="#">AMD Ryzen 9</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mobile-menu-item-lv-1">
+                    <a href="">Mouse - Chuột</a>
+                    <input type="checkbox" id="I">
+                    <label for="I"><i class="fa fa-caret-right submenu-caret"></i></label>
+
+                    <ul>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo thương hiệu</a>
+                                <input type="checkbox" id="I-1">
+                                <label for="I-1"><i class="fa fa-caret-right submenu-caret"></i></label>
+
+                                <ul>
+                                    <li><a href="#">MSI</a></li>
+                                    <li><a href="#">ASUS</a></li>
+                                    <li><a href="#">Gigabyte</a></li>
+                                    <li><a href="#">HP</a></li>
+                                    <li><a href="#">DELL</a></li>
+                                    <li><a href="#">ACER</a></li>
+                                    <li><a href="#">Lenovo</a></li>
+                                    <li><a href="#">Apple</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo nhu cầu</a>
+                                <input type="checkbox" id="I-2">
+                                <label for="I-2"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">Văn phòng</a></li>
+                                    <li><a href="#">Gaming</a></li>
+                                    <li><a href="#">Đồ họa</a></li>
+                                    <li><a href="#">PC All in one</a></li>
+                                    <li><a href="#">PC Mini</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo tầm giá</a>
+                                <input type="checkbox" id="I-3">
+                                <label for="I-3"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">Dưới 10 triệu</a></li>
+                                    <li><a href="#">Từ 10 triệu - 15 triệu</a></li>
+                                    <li><a href="#">Từ 15 triệu - 20 triệu</a></li>
+                                    <li><a href="#">Từ 20 triệu - 25 triệu</a></li>
+                                    <li><a href="#">Trên 25 triệu</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">Máy trạm Workstation</a>
+                                <input type="checkbox" id="I-4">
+                                <label for="I-4"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">DELL Workstation</a></li>
+                                    <li><a href="#">HP Workstation</a></li>
+                                    <li><a href="#">Render, đồ họa Workstation</a></li>
+                                    <li><a href="#">Deep learning Workstation</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo cấu hình chip</a>
+                                <input type="checkbox" id="I-5">
+                                <label for="I-5"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">Intel Core-i3</a></li>
+                                    <li><a href="#">Intel Core-i5</a></li>
+                                    <li><a href="#">Intel Core-i7</a></li>
+                                    <li><a href="#">Intel Core-i9</a></li>
+                                    <li><a href="#">AMD Ryzen 3</a></li>
+                                    <li><a href="#">AMD Ryzen 5</a></li>
+                                    <li><a href="#">AMD Ryzen 7</a></li>
+                                    <li><a href="#">AMD Ryzen 9</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mobile-menu-item-lv-1">
+                    <a href="">Keybroad - Bàn phím</a>
+                    <input type="checkbox" id="K">
+                    <label for="K"><i class="fa fa-caret-right submenu-caret"></i></label>
+
+                    <ul>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo thương hiệu</a>
+                                <input type="checkbox" id="K-1">
+                                <label for="K-1"><i class="fa fa-caret-right submenu-caret"></i></label>
+
+                                <ul>
+                                    <li><a href="#">MSI</a></li>
+                                    <li><a href="#">ASUS</a></li>
+                                    <li><a href="#">Gigabyte</a></li>
+                                    <li><a href="#">HP</a></li>
+                                    <li><a href="#">DELL</a></li>
+                                    <li><a href="#">ACER</a></li>
+                                    <li><a href="#">Lenovo</a></li>
+                                    <li><a href="#">Apple</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo nhu cầu</a>
+                                <input type="checkbox" id="K-2">
+                                <label for="K-2"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">Văn phòng</a></li>
+                                    <li><a href="#">Gaming</a></li>
+                                    <li><a href="#">Đồ họa</a></li>
+                                    <li><a href="#">PC All in one</a></li>
+                                    <li><a href="#">PC Mini</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo tầm giá</a>
+                                <input type="checkbox" id="K-3">
+                                <label for="K-3"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">Dưới 10 triệu</a></li>
+                                    <li><a href="#">Từ 10 triệu - 15 triệu</a></li>
+                                    <li><a href="#">Từ 15 triệu - 20 triệu</a></li>
+                                    <li><a href="#">Từ 20 triệu - 25 triệu</a></li>
+                                    <li><a href="#">Trên 25 triệu</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">Máy trạm Workstation</a>
+                                <input type="checkbox" id="K-4">
+                                <label for="K-4"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">DELL Workstation</a></li>
+                                    <li><a href="#">HP Workstation</a></li>
+                                    <li><a href="#">Render, đồ họa Workstation</a></li>
+                                    <li><a href="#">Deep learning Workstation</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo cấu hình chip</a>
+                                <input type="checkbox" id="K-5">
+                                <label for="K-5"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">Intel Core-i3</a></li>
+                                    <li><a href="#">Intel Core-i5</a></li>
+                                    <li><a href="#">Intel Core-i7</a></li>
+                                    <li><a href="#">Intel Core-i9</a></li>
+                                    <li><a href="#">AMD Ryzen 3</a></li>
+                                    <li><a href="#">AMD Ryzen 5</a></li>
+                                    <li><a href="#">AMD Ryzen 7</a></li>
+                                    <li><a href="#">AMD Ryzen 9</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mobile-menu-item-lv-1">
+                    <a href="">Thiết bị âm thanh</a>
+                    <input type="checkbox" id="L">
+                    <label for="L"><i class="fa fa-caret-right submenu-caret"></i></label>
+
+                    <ul>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo thương hiệu</a>
+                                <input type="checkbox" id="L-1">
+                                <label for="L-1"><i class="fa fa-caret-right submenu-caret"></i></label>
+
+                                <ul>
+                                    <li><a href="#">MSI</a></li>
+                                    <li><a href="#">ASUS</a></li>
+                                    <li><a href="#">Gigabyte</a></li>
+                                    <li><a href="#">HP</a></li>
+                                    <li><a href="#">DELL</a></li>
+                                    <li><a href="#">ACER</a></li>
+                                    <li><a href="#">Lenovo</a></li>
+                                    <li><a href="#">Apple</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo nhu cầu</a>
+                                <input type="checkbox" id="L-2">
+                                <label for="L-2"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">Văn phòng</a></li>
+                                    <li><a href="#">Gaming</a></li>
+                                    <li><a href="#">Đồ họa</a></li>
+                                    <li><a href="#">PC All in one</a></li>
+                                    <li><a href="#">PC Mini</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo tầm giá</a>
+                                <input type="checkbox" id="L-3">
+                                <label for="L-3"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">Dưới 10 triệu</a></li>
+                                    <li><a href="#">Từ 10 triệu - 15 triệu</a></li>
+                                    <li><a href="#">Từ 15 triệu - 20 triệu</a></li>
+                                    <li><a href="#">Từ 20 triệu - 25 triệu</a></li>
+                                    <li><a href="#">Trên 25 triệu</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">Máy trạm Workstation</a>
+                                <input type="checkbox" id="L-4">
+                                <label for="L-4"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">DELL Workstation</a></li>
+                                    <li><a href="#">HP Workstation</a></li>
+                                    <li><a href="#">Render, đồ họa Workstation</a></li>
+                                    <li><a href="#">Deep learning Workstation</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo cấu hình chip</a>
+                                <input type="checkbox" id="L-5">
+                                <label for="L-5"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">Intel Core-i3</a></li>
+                                    <li><a href="#">Intel Core-i5</a></li>
+                                    <li><a href="#">Intel Core-i7</a></li>
+                                    <li><a href="#">Intel Core-i9</a></li>
+                                    <li><a href="#">AMD Ryzen 3</a></li>
+                                    <li><a href="#">AMD Ryzen 5</a></li>
+                                    <li><a href="#">AMD Ryzen 7</a></li>
+                                    <li><a href="#">AMD Ryzen 9</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mobile-menu-item-lv-1">
+                    <a href="">Nguồn máy tính</a>
+                    <input type="checkbox" id="M">
+                    <label for="M"><i class="fa fa-caret-right submenu-caret"></i></label>
+
+                    <ul>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo thương hiệu</a>
+                                <input type="checkbox" id="M-1">
+                                <label for="M-1"><i class="fa fa-caret-right submenu-caret"></i></label>
+
+                                <ul>
+                                    <li><a href="#">MSI</a></li>
+                                    <li><a href="#">ASUS</a></li>
+                                    <li><a href="#">Gigabyte</a></li>
+                                    <li><a href="#">HP</a></li>
+                                    <li><a href="#">DELL</a></li>
+                                    <li><a href="#">ACER</a></li>
+                                    <li><a href="#">Lenovo</a></li>
+                                    <li><a href="#">Apple</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo nhu cầu</a>
+                                <input type="checkbox" id="M-2">
+                                <label for="M-2"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">Văn phòng</a></li>
+                                    <li><a href="#">Gaming</a></li>
+                                    <li><a href="#">Đồ họa</a></li>
+                                    <li><a href="#">PC All in one</a></li>
+                                    <li><a href="#">PC Mini</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo tầm giá</a>
+                                <input type="checkbox" id="M-3">
+                                <label for="M-3"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">Dưới 10 triệu</a></li>
+                                    <li><a href="#">Từ 10 triệu - 15 triệu</a></li>
+                                    <li><a href="#">Từ 15 triệu - 20 triệu</a></li>
+                                    <li><a href="#">Từ 20 triệu - 25 triệu</a></li>
+                                    <li><a href="#">Trên 25 triệu</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">Máy trạm Workstation</a>
+                                <input type="checkbox" id="M-4">
+                                <label for="M-4"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">DELL Workstation</a></li>
+                                    <li><a href="#">HP Workstation</a></li>
+                                    <li><a href="#">Render, đồ họa Workstation</a></li>
+                                    <li><a href="#">Deep learning Workstation</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo cấu hình chip</a>
+                                <input type="checkbox" id="M-5">
+                                <label for="M-5"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">Intel Core-i3</a></li>
+                                    <li><a href="#">Intel Core-i5</a></li>
+                                    <li><a href="#">Intel Core-i7</a></li>
+                                    <li><a href="#">Intel Core-i9</a></li>
+                                    <li><a href="#">AMD Ryzen 3</a></li>
+                                    <li><a href="#">AMD Ryzen 5</a></li>
+                                    <li><a href="#">AMD Ryzen 7</a></li>
+                                    <li><a href="#">AMD Ryzen 9</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mobile-menu-item-lv-1">
+                    <a href="">Cooling - Tản nhiệt</a>
+                    <input type="checkbox" id="N">
+                    <label for="N"><i class="fa fa-caret-right submenu-caret"></i></label>
+
+                    <ul>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo thương hiệu</a>
+                                <input type="checkbox" id="N-1">
+                                <label for="N-1"><i class="fa fa-caret-right submenu-caret"></i></label>
+
+                                <ul>
+                                    <li><a href="#">MSI</a></li>
+                                    <li><a href="#">ASUS</a></li>
+                                    <li><a href="#">Gigabyte</a></li>
+                                    <li><a href="#">HP</a></li>
+                                    <li><a href="#">DELL</a></li>
+                                    <li><a href="#">ACER</a></li>
+                                    <li><a href="#">Lenovo</a></li>
+                                    <li><a href="#">Apple</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo nhu cầu</a>
+                                <input type="checkbox" id="N-2">
+                                <label for="N-2"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">Văn phòng</a></li>
+                                    <li><a href="#">Gaming</a></li>
+                                    <li><a href="#">Đồ họa</a></li>
+                                    <li><a href="#">PC All in one</a></li>
+                                    <li><a href="#">PC Mini</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo tầm giá</a>
+                                <input type="checkbox" id="N-3">
+                                <label for="N-3"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">Dưới 10 triệu</a></li>
+                                    <li><a href="#">Từ 10 triệu - 15 triệu</a></li>
+                                    <li><a href="#">Từ 15 triệu - 20 triệu</a></li>
+                                    <li><a href="#">Từ 20 triệu - 25 triệu</a></li>
+                                    <li><a href="#">Trên 25 triệu</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">Máy trạm Workstation</a>
+                                <input type="checkbox" id="N-4">
+                                <label for="N-4"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">DELL Workstation</a></li>
+                                    <li><a href="#">HP Workstation</a></li>
+                                    <li><a href="#">Render, đồ họa Workstation</a></li>
+                                    <li><a href="#">Deep learning Workstation</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo cấu hình chip</a>
+                                <input type="checkbox" id="N-5">
+                                <label for="N-5"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">Intel Core-i3</a></li>
+                                    <li><a href="#">Intel Core-i5</a></li>
+                                    <li><a href="#">Intel Core-i7</a></li>
+                                    <li><a href="#">Intel Core-i9</a></li>
+                                    <li><a href="#">AMD Ryzen 3</a></li>
+                                    <li><a href="#">AMD Ryzen 5</a></li>
+                                    <li><a href="#">AMD Ryzen 7</a></li>
+                                    <li><a href="#">AMD Ryzen 9</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mobile-menu-item-lv-1">
+                    <a href="">Phụ kiện máy tính</a>
+                    <input type="checkbox" id="O">
+                    <label for="O"><i class="fa fa-caret-right submenu-caret"></i></label>
+
+                    <ul>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo thương hiệu</a>
+                                <input type="checkbox" id="O-1">
+                                <label for="O-1"><i class="fa fa-caret-right submenu-caret"></i></label>
+
+                                <ul>
+                                    <li><a href="#">MSI</a></li>
+                                    <li><a href="#">ASUS</a></li>
+                                    <li><a href="#">Gigabyte</a></li>
+                                    <li><a href="#">HP</a></li>
+                                    <li><a href="#">DELL</a></li>
+                                    <li><a href="#">ACER</a></li>
+                                    <li><a href="#">Lenovo</a></li>
+                                    <li><a href="#">Apple</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo nhu cầu</a>
+                                <input type="checkbox" id="O-2">
+                                <label for="O-2"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">Văn phòng</a></li>
+                                    <li><a href="#">Gaming</a></li>
+                                    <li><a href="#">Đồ họa</a></li>
+                                    <li><a href="#">PC All in one</a></li>
+                                    <li><a href="#">PC Mini</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo tầm giá</a>
+                                <input type="checkbox" id="O-3">
+                                <label for="O-3"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">Dưới 10 triệu</a></li>
+                                    <li><a href="#">Từ 10 triệu - 15 triệu</a></li>
+                                    <li><a href="#">Từ 15 triệu - 20 triệu</a></li>
+                                    <li><a href="#">Từ 20 triệu - 25 triệu</a></li>
+                                    <li><a href="#">Trên 25 triệu</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">Máy trạm Workstation</a>
+                                <input type="checkbox" id="O-4">
+                                <label for="O-4"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">DELL Workstation</a></li>
+                                    <li><a href="#">HP Workstation</a></li>
+                                    <li><a href="#">Render, đồ họa Workstation</a></li>
+                                    <li><a href="#">Deep learning Workstation</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mobile-menu-item-lv-2">
+                                <a href="#">PC theo cấu hình chip</a>
+                                <input type="checkbox" id="O-5">
+                                <label for="O-5"><i class="fa fa-caret-right submenu-caret"></i></label>
+                                <ul>
+                                    <li><a href="#">Intel Core-i3</a></li>
+                                    <li><a href="#">Intel Core-i5</a></li>
+                                    <li><a href="#">Intel Core-i7</a></li>
+                                    <li><a href="#">Intel Core-i9</a></li>
+                                    <li><a href="#">AMD Ryzen 3</a></li>
+                                    <li><a href="#">AMD Ryzen 5</a></li>
+                                    <li><a href="#">AMD Ryzen 7</a></li>
+                                    <li><a href="#">AMD Ryzen 9</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="container">
+        <div id="page-direction">
+            <a href="./index.html"><img src="img/home-icon.png" alt="home-icon"></a>
+            <img id="caret-right" src="img/caret-right.png" alt="caret-right">
+            <a href="#"><span>Giỏ hàng</span></a>
+            <img id="caret-right" src="img/caret-right.png" alt="caret-right">
+            <a href="#"><span>Đặt hàng</span></a>
+        </div>
+
+        <div id="registration-box">
+            <h3>Đặt hàng</h3>
+            <h4>1. Thông tin khách hàng</h4>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Họ và tên" aria-label="Username"
+                    aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Số điện thoại" aria-label="Username"
+                    aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Email" aria-label="Username"
+                    aria-describedby="basic-addon1">
+            </div>
+
+            <div class="wrapper">
+                <select name="province" id="province" class="form-control" onfocus='this.size=6;' onblur='this.size=1;'
+                    onchange='this.size=1; this.blur();'>
+                    <option value="tinh">-- Chọn tỉnh / thành phố --</option>
+                    <option value="">Hà Nội</option>
+                    <option value="">Three</option>
+                    <option value="">Four</option>
+                    <option value="">Five</option>
+                    <option value="">Six</option>
+                    <option value="">Seven</option>
+                    <option value="">Eight</option>
+                    <option value="">Nine</option>
+                    <option value="">Ten</option>
+                </select>
+            </div>
+
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                <label for="floatingTextarea">Địa chỉ cụ thể</label>
+            </div>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                <label for="floatingTextarea">Ghi chú</label>
+            </div>
+
+            <h4>2. Hình thức thanh toán</h4>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="phuong-thuc-thanh-toan" id="flexRadioDefault1" checked>
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Tiền mặt
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="phuong-thuc-thanh-toan" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Chuyển khoản
+                </label>
+            </div>
+
+            <h4>3. Hình thức nhận hàng</h4>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="phuong-thuc-van-chuyen" id="flexRadioDefault3" checked>
+                <label class="form-check-label" for="flexRadioDefault3">
+                    Nhận tại cửa hàng
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="phuong-thuc-van-chuyen" id="flexRadioDefault4">
+                <label class="form-check-label" for="flexRadioDefault4">
+                    Nhận hàng tại nhà
+                </label>
+            </div>
+
+            <h4>4. Hình thức vận chuyển</h4>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="hinh-thuc-van-chuyen" id="flexRadioDefault5" checked>
+                <label class="form-check-label" for="flexRadioDefault5">
+                   Vận chuyển thông thường
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="hinh-thuc-van-chuyen" id="flexRadioDefault6">
+                <label class="form-check-label" for="flexRadioDefault6">
+                   Chuyển phát nhanh 
+                </label>
+            </div>
+
+            <button id="confirm-purchase" type="submit">Xác nhận đặt hàng</button>
+        </div>
+
+
+
+
+        <!-- contact fixed -->
+        <div id="contact-fixed">
+            <div id="phone-location-facebook">
+                <div id="phone-fixed"><img src="img/phone-fixed.png" alt="phone"></div>
+                <div id="location-fixed"><img src="img/location-fixed.png" alt="location"></div>
+                <a id="facebook-fixed" href="https://www.facebook.com/dang.dinhvan.5/"><img src="img/facebook-fixed.png"
+                        alt="facbook"></a>
+            </div>
+            <div id="up-messenger">
+                <a id="up-to-header" href="#">
+                    <div><i class="fas fa-angle-up"></i></div>
+                </a>
+                <a id="messenger-fixed" href="https://m.me/dang.dinhvan.5/"><img src="img/messenger-fixed.png"
+                        alt="messenger"></a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer-title">
+            <div id="footer-items-name">
+                <div class="footer-item-name">Thông tin chung</div>
+                <div class="footer-item-name">Chính sách chung</div>
+                <div class="footer-item-name">Hỗ trợ khách hàng</div>
+                <div class="footer-item-name">Các phương thức liên lạc</div>
+            </div>
+        </div>
+        <div id="footer-content">
+            <div id="footer-items-content">
+                <div class="footer-item-content">
+                    <p class="footer-item-name-mobile">Thông tin chung</p>
+                    <a href="">Giới thiệu</a>
+                    <a href="">Thông tin liên hệ</a>
+                    <a href="">Hệ thống cửa hàng</a>
+                    <a href="">Hỏi đáp</a>
+                    <a href="">Tin tức</a>
+                </div>
+                <div class="footer-item-content">
+                    <p class="footer-item-name-mobile">Chính sách chung</p>
+                    <a href="">Chính sách vận chuyển</a>
+                    <a href="">Chính sách bảo hành</a>
+                    <a href="">Chính sấch đổi trả - hoàn tiền</a>
+                    <a href="">Chính sách hàng chính hãng</a>
+                    <a href="">Chính sách mua trả góp </a>
+                </div>
+                <div class="footer-item-content">
+                    <p class="footer-item-name-mobile">Hỗ trợ khách hàng</p>
+                    <a href="">Trung tâm bảo hành</a>
+                    <a href="">Hướng dẫn mua hàng online</a>
+                    <a href="">Hướng dẫn mua trả góp</a>
+                    <a href="">Thẻ ưu đãi</a>
+                    <a href="">Dịch vụ sửa chữa, bảo trì</a>
+                </div>
+                <div class="footer-item-content">
+                    <p class="footer-item-name-mobile">Các phương thức liên lạc</p>
+                    <a href=""><img src="img/facebook-icon.png" alt="facebook-icon"><span>Enjoy Computer</span></a>
+                    <a href=""><img src="img/headphone-icon.png" alt="headphone-icon"><span>Gọi mua
+                            hàng:</span><span style="font-weight: 600; color: rgb(255, 20, 20);">1900
+                            7777</span><span>(miễn
+                            phí)</span></a>
+                    <a href=""><img src="img/headphone-icon.png" alt="headphone-icon"><span>Chăm sóc KH:</span><span
+                            style="font-weight: 600; color: rgb(255, 20, 20);">1900 6868</span><span>(miễn
+                            phí)</span></a>
+                    <a href=""><img src="img/headphone-icon.png" alt="headphone-icon"><span>Khách hàng doanh
+                            nghiệp:</span><span style="font-weight: 600; color: rgb(255, 20, 20);">0961 121
+                            637</span></a>
+                    <a href=""><img src="img/mail-icon.png"
+                            alt="mail-icon"><span>Email:</span><span>enjoycomputer@gmail.com</span></a>
+                </div>
+            </div>
+            <div id="address-box">
+                <div id="address">
+                    <div id="footer-company-name">Công ty cổ phần thương mại - dịch vụ Enjoy Computer</div>
+                    <div id="add">Địa chỉ: Số 1/92 Phan Chu Trinh, Nhị Châu, TP. Hải Dương, tỉnh Hải Dương</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/dat-hang.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

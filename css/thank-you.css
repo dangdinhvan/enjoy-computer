@@ -1,0 +1,14 @@
+#thank-box {
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+h4 {
+    text-align: center;
+    color: #222;
+}

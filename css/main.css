@@ -761,14 +761,17 @@ footer {
     margin: 0px 8px;
   }
   #logo-search-tablet-mobile img {
-    width: 100px;
+    width: 110px;
   }
   #search-bar-tablet-mobile {
     width: 50%;
-    height: 25px;
+    height: 30px;
+  }
+  #input-search-tablet-mobile{
+    padding: 5px 6px;
   }
   #search-btn-tablet-mobile {
-    width: 25px;
+    width: 28px;
   }
   #search-btn-tablet-mobile i {
     font-size: 12px;

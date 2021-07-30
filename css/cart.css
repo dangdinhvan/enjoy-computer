@@ -593,7 +593,7 @@ h4 {
         width: 100%;
         justify-content: space-between;
     }
-    #total-cost span{
+    #total-cost span {
         font-size: 18px !important;
         line-height: 20px;
     }
@@ -614,6 +614,10 @@ h4 {
     }
     .checkbox-product-info {
         width: 79%;
+        align-items: flex-start;
+    }
+    .checkbox-product-info input[type='checkbox'] {
+        margin-top: 20px;
     }
     .product-info {
         max-width: 400px;
@@ -689,13 +693,13 @@ h4 {
         font-size: 14px;
         line-height: 20px;
     }
-    #total-payment{
+    #total-payment {
         font-size: 16px;
     }
-    #text-vat{
+    #text-vat {
         font-size: 14px;
     }
-    #payment-methods{
+    #payment-methods {
         display: none;
     }
 }
