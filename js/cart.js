@@ -91,3 +91,6 @@ $(window).click(function (event) {
     }
 })
 
+$('#purchase').click(function(){
+    window.location.href='./dat-hang.html';
+});
