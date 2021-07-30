@@ -696,6 +696,7 @@
     }
     .sm-btn {
         font-size: 13px;
+        padding: 12px 4px;
     }
     #company-policy-services {
         max-width: 100%;

@@ -6,7 +6,7 @@ $('#hamberger').on('click', function () {
 $(window).on('click', function (event) {
     if ($(event.target).is($('#mobile-menu-container'))) {
         $('#mobile-menu-container').removeClass('show');
-        $('input[type=checkbox]').prop('checked', false);
+        $('#mobile-menu input[type=checkbox]').prop('checked', false);
         $('#menu-mobile').css('animation', 'none');
     }
 });
