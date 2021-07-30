@@ -529,7 +529,9 @@ footer {
   width: 170px;
   color: #222222;
 }
-
+.mobile-menu-item-lv-1 a:active{
+  color: rgba(38, 121, 255, 0.9);
+}
 .submenu-caret {
   margin-left: 20px;
   transition: transform 0.4s ease;

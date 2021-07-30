@@ -86,6 +86,7 @@ $('.fa-caret-down').click(function () {
         caretDownTemp = false;
         $('.filter-mobile-item-content').removeClass('show');
         $('.fa-minus').removeClass('fa-minus').addClass('fa-plus');
+        $('#filter-mobile-header').css('border-bottom','#c4c4c4 solid 1px');
     }
     else if (caretDownTemp === false) {
         $('#filter-mobile-content').removeClass('show');
@@ -93,6 +94,7 @@ $('.fa-caret-down').click(function () {
         caretDownTemp = true;
         $('.filter-mobile-item-content').removeClass('show');
         $('.fa-minus').removeClass('fa-minus').addClass('fa-plus');
+        $('#filter-mobile-header').css('border-bottom','none');
     }
 });
 
