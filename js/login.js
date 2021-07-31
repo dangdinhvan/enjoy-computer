@@ -34,7 +34,7 @@ function validateSignIn() {
         $('.resault-sign-in-up').html('Đăng nhập thành công')
         $('.resault-sign-in-up').css('color', '#349c45')
         setTimeout(() => {
-            window.location.href = './index.html';
+            window.location.href = 'https://dangdinhvan.github.io/enjoy-computer/index.html';
         }, 1000);
     }
 }
@@ -77,7 +77,7 @@ function validateSignUp() {
         $('.resault-sign-in-up').html('Đăng ký thành công')
         $('.resault-sign-in-up').css('color', '#349c45')
         setTimeout(() => {
-            window.location.href = './login.html';
+            window.location.href = 'https://dangdinhvan.github.io/enjoy-computer/login.html';
         }, 1000);
     }
 }

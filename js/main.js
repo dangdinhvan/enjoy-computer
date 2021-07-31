@@ -12,10 +12,10 @@ $(window).on('click', function (event) {
 });
 
 $('#logo').on('click', function () {
-    window.location.href = './index.html';
+    window.location.href = 'https://dangdinhvan.github.io/enjoy-computer/index.html';
 });
 $('#logo-tablet-mobile').on('click', function () {
-    window.location.href = './index.html';
+    window.location.href = 'https://dangdinhvan.github.io/enjoy-computer/index.html';
 });
 
 $('.product-card-gift-img span').html('x1 túi đựng laptop 15"');
@@ -51,8 +51,10 @@ $(window).click(function (event) {
 })
 
 $('#search-btn').click(function () {
-    window.location.href = './laptop.html';
+    window.location.href = 'https://dangdinhvan.github.io/enjoy-computer/laptop.html';
 });
+
+
 
 
 
