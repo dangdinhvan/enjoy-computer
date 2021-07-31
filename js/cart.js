@@ -76,6 +76,8 @@ $('#delete-all').click(function () {
     $('.delete-confirm-btn').click(function () {
         $('#content').html('Không có sản phẩm trong giỏ hàng');
         $('#content').css('justify-content', 'center').css('align-items', 'center').css('font-size', '18px');
+        $('#content').css('background-image','url(../img/empty-product.png)');
+        $('#content').css('background-repeat','no-repeat').css('background-position','center');
         fadeModalDelete();
     });
 });
