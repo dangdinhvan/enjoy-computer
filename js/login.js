@@ -34,7 +34,7 @@ function validateSignIn() {
         $('.resault-sign-in-up').html('Đăng nhập thành công')
         $('.resault-sign-in-up').css('color', '#349c45')
         setTimeout(() => {
-            window.location.href = '/';
+            window.location.href = './index.html';
         }, 1000);
     }
 }
