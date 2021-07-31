@@ -119,3 +119,5 @@ $('.filter-mobile-item-content div').click(function(){
 
 // set height = width laptop-theo-nhu-cau-item img
 $('#laptop-theo-nhu-cau-item img').height($('#laptop-theo-nhu-cau-item img').width()+"px");
+
+// active pagination

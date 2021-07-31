@@ -17,20 +17,29 @@ h4 {
     margin-top: 16px;
     font-size: 20px;
 }
-
+.mb-3{
+    margin: 16px 0px 6px 0px !important;
+}
 .wrapper {
     width: 100%;
-    margin-bottom: 16px;
+    margin: 16px 0px 6px 0px;
 }
 
 .form-floating {
-    margin-bottom: 16px;
+    margin: 16px 0px 6px 0px;
 }
 
 .form-floating label {
     color: #575c5c;
 }
-
+.resault-validate{
+    color: #fb0000;
+    font-style: italic;
+    display: none;
+}
+.resault-validate.show{
+    display: block;
+}
 #confirm-purchase {
     width: fit-content;
     padding: 20px 16px;

@@ -270,6 +270,161 @@ header {
 
 /* Kết thúc Style cho container */
 
+/* Style cho modal phone box */
+
+#phone-container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  visibility: hidden;
+  z-index: 1000;
+}
+
+.phone-box {
+  width: 380px;
+  height: fit-content;
+  border-radius: 10px;
+  background-color: white;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.phone-box-title {
+  width: 100%;
+}
+
+.phone-box-title div {
+  width: 100%;
+  height: fit-content;
+}
+
+#close-btn-box {
+  height: 25px;
+}
+
+.icon-close {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border: none;
+  font-size: 25px;
+  padding: 0px;
+  color: grey;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+}
+
+.icon-close:active {
+  border-style: solid;
+  border-color: rgb(123, 182, 248);
+  border-radius: 5px;
+}
+
+.phone-box-title p {
+  font-size: 18px;
+  margin: 0px;
+  font-weight: 600;
+}
+
+.phone-box-body {
+  width: 100%;
+  margin-top: 8px;
+  line-height: 1.5;
+}
+
+.phone-call-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+  border-bottom: lavender solid 1px;
+}
+
+.phone-call-item-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
+  box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.20);
+  border-radius: 15px;
+}
+
+.phone-call-item-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+}
+
+.phone-call-item-number {
+  color: #a1a1a1;
+  margin-top: 8px;
+}
+
+#phone-box-footer {
+  margin-top: 20px;
+}
+
+#phone-box-footer p {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+#call-back {
+  width: 100%;
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  overflow: hidden;
+  border: rgb(190, 190, 190) solid 1px;
+}
+
+#call-back i {
+  font-size: 20px;
+  color: #c5c5c5;
+  margin-right: 8px;
+}
+
+#call-back>div {
+  width: 62%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 10px;
+}
+
+#call-back input {
+  width: 90%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+#call-back button {
+  width: 38%;
+  padding: 12px 4px;
+  background-color: #f95a0b;
+  color: white;
+  font-size: 16px;
+  border: none;
+}
+
+#phone-container.show {
+  visibility: visible;
+}
+
+/* Kết thúc Style cho modal phone box */
+
 /* Style cho contact fixed */
 
 #contact-fixed {
@@ -397,7 +552,7 @@ footer {
 
 .footer-item-name-mobile {
   display: none;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   margin-bottom: 12px !important;
 }
@@ -514,6 +669,10 @@ footer {
   color: #222222;
 }
 
+#signin-signup>a:active {
+  color: rgba(38, 121, 255, 0.9);
+}
+
 .mobile-menu-item-lv-1 {
   font-size: 13px;
   color: #222222;
@@ -529,9 +688,11 @@ footer {
   width: 170px;
   color: #222222;
 }
-.mobile-menu-item-lv-1 a:active{
+
+.mobile-menu-item-lv-1 a:active {
   color: rgba(38, 121, 255, 0.9);
 }
+
 .submenu-caret {
   margin-left: 20px;
   transition: transform 0.4s ease;
@@ -679,6 +840,9 @@ footer {
     margin: 0px 32px;
   }
   /* contact fixed */
+  #contact-fixed {
+    opacity: 0.8;
+  }
   #contact-fixed a {
     width: 40px !important;
     height: 40px !important;
@@ -738,6 +902,7 @@ footer {
   /* contact fixed */
   #contact-fixed {
     right: 20px;
+    opacity: 0.8;
   }
   #contact-fixed a {
     width: 40px !important;
@@ -769,7 +934,7 @@ footer {
     width: 50%;
     height: 30px;
   }
-  #input-search-tablet-mobile{
+  #input-search-tablet-mobile {
     padding: 5px 6px;
   }
   #search-btn-tablet-mobile {
@@ -787,7 +952,7 @@ footer {
     font-size: 10px;
   }
   /* page direction */
-  #page-direction{
+  #page-direction {
     margin: 10px 0px;
   }
   #page-direction a {
@@ -819,6 +984,9 @@ footer {
   .footer-item-name-mobile {
     display: block;
   }
+  .footer-item-content a {
+    margin-bottom: 8px;
+  }
   #address {
     max-width: 543px;
     margin: 0px 16px;
@@ -838,6 +1006,7 @@ footer {
   /* contact fixed */
   #contact-fixed {
     right: 20px;
+    opacity: 0.8;
   }
   #contact-fixed a {
     width: 30px !important;
@@ -852,6 +1021,30 @@ footer {
   }
   #up-to-header i {
     font-size: 28px;
+  }
+  /* phone modal */
+  .phone-box {
+    width: 300px;
+    padding: 16px 9px;
+  }
+  .phone-box-title p {
+    font-size: 16px;
+  }
+  #phone-box-footer p {
+    font-size: 15px;
+  }
+  #call-back i {
+    font-size: 16px;
+  }
+  #call-back>div {
+    padding: 4px 6px;
+  }
+  #call-back input {
+    font-size: 14px;
+  }
+  #call-back button {
+    font-size: 14px;
+    padding: 8px 3px;
   }
 }
 

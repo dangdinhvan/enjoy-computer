@@ -112,14 +112,18 @@ function activeImg(imgNumber) {
         $('.containerZoom').css('background-image', 'url("img/laptop-img-6.webp")');
     }
 }
-// buy now button
-$('#buy-now-btn').click(function () {
-    window.location.href = './cart.html';
-});
-
 $(function () {
     $('#img-active').imageZoom({
         zoom: 200
     });
 });
+// buy now button
+$('#buy-now-btn').click(function () {
+    window.location.href = './cart.html';
+});
+
+$('.installment-btn').click(function () {
+    window.location.href = './cart.html';
+});
+
 

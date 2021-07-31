@@ -313,7 +313,7 @@
     height: 24px;
     margin-right: 4px;
 }
-
+/* style cho pagination */
 #paginate {
     display: flex;
     align-items: center;

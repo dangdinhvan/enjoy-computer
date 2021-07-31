@@ -731,9 +731,9 @@
         height: 33px;
     }
     .product-classification-title {
-        width: 180px;
+        width: 159px;
         border-top: 33px solid rgba(38, 121, 255, 0.9);
-        border-right: 35px solid transparent;
+        border-right: 25px solid transparent;
     }
     .product-classification-title p {
         font-size: 12px;

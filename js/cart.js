@@ -74,6 +74,7 @@ $('#delete-all').click(function () {
     $('.modal-box').css('transform', 'translate(0px,180px)');
     $('.modal-box').css('transition', 'transform 0.3s ease-out');
 });
+
 function fadeModalDelete() {
     $('#modal-container').removeClass('show');
     $('.modal-box').css('transform', 'none');
