@@ -53,7 +53,9 @@ $(window).click(function (event) {
 $('#search-btn').click(function () {
     window.location.href = 'https://dangdinhvan.github.io/enjoy-computer/laptop.html';
 });
-
+$('#search-btn-tablet-mobile').click(function () {
+    window.location.href = 'https://dangdinhvan.github.io/enjoy-computer/laptop.html';
+});
 
 
 
