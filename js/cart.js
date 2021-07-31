@@ -78,7 +78,6 @@ $('#delete-all').click(function () {
         $('#content').css('justify-content', 'center').css('align-items', 'center').css('font-size', '18px').css('background-color','white');
         $('#content').css('background-image','url(../img/empty-product.png)');
         $('#content').css('background-repeat','no-repeat').css('background-position','center');
-
         fadeModalDelete();
     });
 });
